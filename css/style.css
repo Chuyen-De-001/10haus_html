@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+
+/* Basic reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-left: 80px;
+    padding-right: 80px;
+    font-family: "Roboto";
+}
+
+:root {
+    --nav-bg: #212121;
+    --nav-logo: #fff;
+    --nav-link: #9e9e9e;
+    --nav-link-hover: #fff;
+    --nav-border: #424242;
+    --nav-btn: #424242;
+}
+
+/* Navbar 1 (base)*/
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 1em;
+    background-color: white;
+}
+
+.nav-logo {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: var(--nav-logo);
+    text-decoration: none;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-list li {
+    display: inline-block;
+    margin-left: 1em;
+    font-size: 1.25em;
+}
+
+.nav-list li a:hover {
+    color: #A51A1D;
+}
+
+.nav-list a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: var(--nav-link-hover);
+}
+
+/* Navbar 2 */
+.nav-2 {
+    justify-content: space-between;
+}
+
+/* Navbar 3 */
+.nav-3 {
+    justify-content: space-between;
+}
+
+/* Contact button */
+.nav-btn {
+    background-color: var(--nav-btn);
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.header {
+    padding: 10px 0px;
+}
+
+.banner-sub-left, .banner-sub-right {
+    position: relative;
+}
+
+.banner-sub-title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    width: 50%;
+}
+
+.banner-sub-button {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+.product {
+    border: solid 1px black;
+    position: relative;
+}
+
+.product img:hover .product-button {
+    display: block;
+}
+
+.product img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    padding: 30px 20px;
+}
+
+.product-detail {
+    background: #000000;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.product-button {
+    display: none;
+    position: absolute;
+    top: 100px;
+}
+
+.product-detail h2 {
+    margin-bottom: 10px;
+}
+
+.footer {
+    background: #A51A1D;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .footer-item {
+    padding: 20px;
+    color: white;
+}
+
+.footer .footer-item p {
+    margin: 15px 0px;
+}
+
+.footer-item-icon {
+    display: flex;
+    flex-direction: column-reverse
+}
+
+
+

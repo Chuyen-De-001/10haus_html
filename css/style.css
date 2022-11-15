@@ -114,8 +114,18 @@ body {
     position: relative;
 }
 
+@keyframes show-product-btn {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
 .product:hover .product-button {
-    display: block;
+    animation-name: show-product-btn;
+    animation-duration: 1s;
 }
 
 .product img {
@@ -133,7 +143,7 @@ body {
 }
 
 .product-button {
-    display: none;
+    opacity: 0;
     position: absolute;
     top: 100px;
 }
@@ -209,6 +219,8 @@ body {
 
 .dropdown:hover .dropdown-content {
     display: block;
+    animation-name: fade;
+    animation-duration: 0.5s;
 }
 
 .nav > li {
@@ -242,8 +254,23 @@ body {
     z-index: 100;
 }
 
+@keyframes fade {
+    from {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
 .menu li:hover > .sub-menu {
     display: block;
+    animation-name: fade;
+    animation-duration: 0.5s;
 }
 
 .menu > li > .sub-menu {

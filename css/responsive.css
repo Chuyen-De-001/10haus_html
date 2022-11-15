@@ -81,4 +81,8 @@
     .footer {
         flex-direction: column;
     }
+
+    .menu .sub-menu {
+        position: initial;
+    }
 }

@@ -43,7 +43,7 @@ body {
     list-style: none;
 }
 
-.nav-list li {
+.nav-list > li {
     display: inline-block;
     margin-left: 1em;
     font-size: 1.25em;
@@ -53,10 +53,11 @@ body {
     color: #A51A1D;
 }
 
-.nav-list a {
+.nav-list > li > a {
     color: black;
     font-weight: bold;
     text-decoration: none;
+    font-size: 1em;
     transition: color 0.3s ease;
 }
 
@@ -106,12 +107,14 @@ body {
     right: 30px;
 }
 
+/* product */
+
 .product {
     border: solid 1px black;
     position: relative;
 }
 
-.product img:hover .product-button {
+.product:hover .product-button {
     display: block;
 }
 
@@ -139,6 +142,8 @@ body {
     margin-bottom: 10px;
 }
 
+/*  end product */
+
 .footer {
     background: #A51A1D;
     padding: 20px;
@@ -161,4 +166,121 @@ body {
 }
 
 
+/* Dropdown Button */
+.btn-dropdown {
+    color: white;
+    font-size: 16px;
+    border: none;
+}
 
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: normal;
+    border: solid 1px red;
+}
+
+.dropdown-content a:not(:last-child) {
+    border-bottom: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav > li {
+    float: left;
+    margin-right: 15px;
+}
+
+.nav > li > a {
+    text-transform: uppercase;
+    color: red;
+}
+
+.menu > li {
+    position: relative;
+    list-style: none;
+}
+
+.menu li a {
+    padding: 10px;
+    line-height: 20px;
+    display: inline-block;
+}
+
+.menu .sub-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 300px;
+    background-color: #eee;
+    z-index: 100;
+}
+
+.menu li:hover > .sub-menu {
+    display: block;
+}
+
+.menu > li > .sub-menu {
+    top: 40px;
+    left: 0;
+}
+
+.menu .sub-menu > li {
+    border: solid 1px red;
+    width: 100%;
+    position: relative;
+}
+
+.menu .sub-menu > li:not(:last-child) {
+    border-bottom: none;
+}
+
+.menu .sub-menu > li {
+    padding: 10px;
+}
+
+.menu .sub-menu > li > a {
+    color: black;
+    text-decoration: none;
+}
+
+svg {
+    width: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+
+svg {
+    right: 15px;
+    top: 22px;
+    position: absolute;
+}

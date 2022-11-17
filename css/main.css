@@ -73,8 +73,28 @@
     text-align: right;
 }
 
+.text-decoration-none {
+    text-decoration: none;
+}
+
+.text-weight-bold {
+    font-weight: bold;
+}
+
 .text-center {
     text-align: center;
+}
+
+.text-black {
+    color: black;
+}
+
+.text-danger{
+    color: #A51A1D;
+}
+
+.text-white {
+    color: white;
 }
 
 .text-left {
@@ -213,4 +233,32 @@
 
 .w-100 {
     width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.flex-direction-column-reverse {
+    flex-direction: column-reverse;
+}
+
+.flex-flow-row {
+    flex-flow: row;
+}
+
+.flex-flow-row-reverse {
+    flex-flow: row-reverse;
+}
+
+.justify-content {
+    justify-content: center;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
 }

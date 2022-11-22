@@ -386,6 +386,7 @@ p {
     background: white;
     font-weight: bold;
     border: solid 3px #A51A1D;
+    padding: 7px 13px;
 }
 
 .pagination a {
@@ -532,5 +533,33 @@ p {
     border-radius: 40px;
 }
 
+.star-icon {
+    color: #ccc;
+    font-size: 24px;
+    vertical-align: middle;
+}
 
+.star-icon.filled {
+    color: #A51A1D;
+}
 
+.reviews-text {
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: underline;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.box-comment > div span, p {
+    font-size: 0.75em;
+    line-height: 1.5;
+}
+
+.box-comment > div.row div.col-4 > div {
+    border: solid 2px black;
+    border-radius: 20px;
+    padding: 10px;
+    height: 135px;
+}

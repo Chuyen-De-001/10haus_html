@@ -567,3 +567,22 @@ p {
 button {
     font-weight: bold;
 }
+
+.box-cart > table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+.box-cart > table > thead {
+    background: #D9D9D9;
+}
+
+.box-cart > table > thead > tr > td {
+    padding: 10px;
+}
+
+.box-cart > table td {
+    border: solid 1px black;
+    text-align: center;
+}

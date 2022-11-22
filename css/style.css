@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
-
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
 /* Basic reset */
 * {
     padding: 0;
@@ -25,7 +24,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    font-family: Montserrat, sans-serif;
+    /* font-family: Montserrat, sans-serif; */
     margin-bottom: 1em;
     background-color: white;
 }
@@ -474,13 +473,15 @@ p {
     border: none;
     outline: none;
     margin: 0px;
+    padding: 10px 5px;
+    text-align: center;
 }
 
 .input-number-decrement,
 .input-number-increment {
     display: inline-block;
     width: 30px;
-    /* line-height: 40px; */
+    line-height: 35px;
     background: #f1f1f1;
     color: #444;
     text-align: center;
@@ -500,8 +501,7 @@ p {
 
 .quantity > div {
     display: inline-block;
-    /* height: 50px; */
-    width: fit-content;
+    line-height: 35px;
     border: solid 3px #A51A1D;
     border-radius: 20px;
     margin-left: 20px;
@@ -517,7 +517,7 @@ p {
 }
 
 .product-img-thumbnail {
-    width: 82px;
+    width: 100px;
     height: inherit;
     overflow-y: auto;
     margin-right: 5px;
@@ -562,4 +562,8 @@ p {
     border-radius: 20px;
     padding: 10px;
     height: 135px;
+}
+
+button {
+    font-weight: bold;
 }

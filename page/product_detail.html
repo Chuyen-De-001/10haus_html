@@ -104,11 +104,25 @@
       </div>
     </div>
     <p style="padding: 15px"><span class="text-uppercase">10haus</span> / <span>Sản phẩm giảm giá</span> /
-      <span class="text-uppercase text-weight-bold">BEIGE CONCEPT T-SHIRT</span></p>
+      <span class="text-uppercase text-weight-bold">BEIGE CONCEPT T-SHIRT</span>
+    </p>
     <div class="row">
-      <div class="col-5">
+      <div class="col-6">
+        <div class="flex" style="height: 500px">
+          <div class="product-img-thumbnail">
+            <img src="../img/product/product_detail/img_9378_91c2ac58abf54bd79070aa82ffd1aefd_master%20(1).jpg" class="w-100" style="height: 100px; padding: 5px; border: solid 1px black" alt="">
+            <img src="../img/product/product_detail/img_9378_91c2ac58abf54bd79070aa82ffd1aefd_master%20(1).jpg" class="w-100" style="height: 100px; padding: 5px; border: solid 1px black" alt="">
+            <img src="../img/product/product_detail/img_9375_892eb142186945e4be09963a7aec6f91_master%20(1).jpg" class="w-100" style="height: 100px; padding: 5px; border: solid 1px black" alt="">
+            <img src="../img/product/product_detail/img_9381_3f69293b0667480597ccc729f0d0a594_master%20(1).jpg" class="w-100" style="height: 100px; padding: 5px; border: solid 1px black" alt="">
+            <img src="../img/product/product_detail/img_9950_a63a446f68114b0e8f977d2ce8448c92_master%20(1).jpg" class="w-100" style="height: 100px; padding: 5px; border: solid 1px black" alt="">
+            <img src="../img/product/product_detail/img_9378_91c2ac58abf54bd79070aa82ffd1aefd_master%20(1).jpg" class="w-100" style="height: 100px; padding: 5px; border: solid 1px black" alt="">
+          </div>
+          <div class="w-100" style="height: initial; padding: 5px;border: solid 1px black">
+            <img src="../img/product/product_detail/img_9382_50544a518be64f35b2aeabdea473bf65_master (1).jpg" class="w-100" style="height: 100%">
+          </div>
+        </div>
       </div>
-      <div class="col-7">
+      <div class="col-6">
         <h2>BLACK CONCEPT T-SHIRT</h2>
         <h5 class="mb-3">
           <svg width="84" height="15" viewBox="0 0 84 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -120,81 +134,93 @@
           </svg>
         </h5>
         <div class="h-divider"></div>
-        <h2 class="mt-2 mb-5">
+        <h2 class="mt-2 mb-2">
           450.000 VNĐ
         </h2>
-
         <div class="product-info">
-          <div class="row">
-            <div class="col-3">
-              <span class="text-uppercase">màu sắc:</span>
-            </div>
-            <div class="col-9 color">
-              <ul>
-                <li>
-                  <input type="radio" name="color" id="color_black">
-                  <label for="color_black" class="ml-2"><img src="../img/icon/black.png"/></label>
-                </li>
-                <li>
-                  <input type="radio" name="color" id="color_brow">
-                  <label for="color_brow" class="ml-2">
-                    <img src="../img/icon/brow.png"/>
-                  </label>
-                </li>
-              </ul>
-            </div>
+          <table class="w-100">
+            <tr class="p-5 mb-2">
+              <td class="w-20 text-uppercase">Màu sắc</td>
+              <td class="color">
+                <ul class="flex flex-flow-row">
+                  <li>
+                    <input type="radio" name="color" id="color_black">
+                    <label for="color_black" class="ml-2"><img src="../img/icon/black.png"/></label>
+                  </li>
+                  <li>
+                    <input type="radio" name="color" id="color_brow">
+                    <label for="color_brow" class="ml-2">
+                      <img src="../img/icon/brow.png"/>
+                    </label>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="w-20 text-uppercase">Size:</td>
+              <td class="size">
+                <ul>
+                  <li>
+                    <input type="radio" name="size" id="size_s">
+                    <label for="size_s" class="ml-2"><img src="../img/icon/size-s.png"/></label>
+                  </li>
+                  <li>
+                    <input type="radio" name="size" id="size_m">
+                    <label for="size_m" class="ml-2">
+                      <img src="../img/icon/size_m.png"/>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="size" id="size_l">
+                    <label for="size_l" class="ml-2">
+                      <img src="../img/icon/size_l.png"/>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="size" id="size_xl">
+                    <label for="size_xl" class="ml-2">
+                      <img src="../img/icon/size-xl.png"/>
+                    </label>
+                  </li>
+                </ul>
+                <button class="btn btn-danger btn-radius text-uppercase shadow pull-right">mua ngay</button>
+              </td>
+            </tr>
+            <tr>
+              <td class="w-20">Số lượng:</td>
+              <td class="quantity">
+                <div>
+                  <span class="input-number-decrement" onclick="quantity_down()">–</span>
+                  <input class="input-number" id="quantity_value" type="text" value="1" min="0" max="10">
+                  <span class="input-number-increment" onclick="quantity_up()">+</span>
+                </div>
+                <button class="btn btn-danger btn-radius text-uppercase shadow pull-right">thêm vào giỏ hàng</button>
+              </td>
+            </tr>
+          </table>
+          <div class="h-divider mt-3 mb-3"></div>
+          <div class="col-6">
+            <h3 class="text-danger text-weight-bold mb-2 text-decoration-underline">THÔNG TIN SẢN PHẨM</h3>
+            <p><span class="text-weight-bold">Chất liệu:</span> 100% cotton hai chiều</p>
+            <p><span class="text-weight-bold">Định lượng vải:</span> 320 gsm</p>
+            <p><span class="text-weight-bold">Form:</span> Oversized/p>
+            <p>
+              <span class="text-weight-bold">Đặc điểm sản phẩm:</span> Hình họa được in lụa, logo đúc kim loại trước ngực áo
+            </p>
           </div>
-          <div class="row">
-            <div class="col-3">
-              <span class="text-uppercase">size:</span>
-            </div>
-            <div class="col-6 size">
-              <ul>
-                <li>
-                  <input type="radio" name="size" id="size_s">
-                  <label for="size_s" class="ml-2"><img src="../img/icon/size-s.png"/></label>
-                </li>
-                <li>
-                  <input type="radio" name="size" id="size_m">
-                  <label for="size_m" class="ml-2">
-                    <img src="../img/icon/size_m.png"/>
-                  </label>
-                </li>
-                <li>
-                  <input type="radio" name="size" id="size_l">
-                  <label for="size_l" class="ml-2">
-                    <img src="../img/icon/size_l.png"/>
-                  </label>
-                </li>
-                <li>
-                  <input type="radio" name="size" id="size_xl">
-                  <label for="size_xl" class="ml-2">
-                    <img src="../img/icon/size-xl.png"/>
-                  </label>
-                </li>
-              </ul>
-            </div>
-            <div class="col-3" style="padding: 0px">
-              <button class="btn btn-danger btn-radius text-uppercase shadow" style="margin: 0px;">mua ngay</button>
-            </div>
+          <div class="col-6">
+            <h3 class="text-weight-bold text-danger mb-2 text-decoration-underline">BẢNG SIZE</h3>
+            <p><span class="text-weight-bold">Size S:</span> Dài 66cm - ngang 54cm</p>
+            <p><span class="text-weight-bold">Size M:</span> Dài 70cm - ngang 56cm</p>
+            <p><span class="text-weight-bold">Size L:</span> Dài 74cm - ngang 58cm</p>
+            <p><span class="text-weight-bold">Size XL:</span> Dài 78cm - ngang 60cm</p>
           </div>
-          <div class="row">
-            <div class="col-3">
-              <span class="text-uppercase">số lượng:</span>
-            </div>
-            <div class="col-6 quantity">
-              <div>
-                <span class="input-number-decrement">–</span>
-                <input class="input-number" type="text" value="1" min="0" max="10">
-                <span class="input-number-increment">+</span>
-              </div>
-            </div>
-            <div class="col-3" style="padding: 0px">
-              <button class="btn btn-danger btn-radius text-uppercase shadow" style="margin: 0px">mua ngay</button>
-            </div>
+          <div>
+
           </div>
         </div>
       </div>
+    </div>
     <div class="banner mb-3">
       <img src="../img/logo/Banner%203.jpg" alt="" class="w-100">
     </div>
@@ -229,5 +255,21 @@
     </div>
   </div>
 </div>
+<script>
+  function quantity_up() {
+    var input   = document.getElementById('quantity_value');
+    input.value = parseInt(input.value) + 1;
+  }
+
+  function quantity_down() {
+    var input    = document.getElementById('quantity_value');
+    var quantity = parseInt(input.value);
+    if(quantity > 1) {
+      input.value = quantity - 1;
+    } else {
+      input.value = 1;
+    }
+  }
+</script>
 </body>
 </html>

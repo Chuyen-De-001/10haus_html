@@ -81,6 +81,11 @@
     text-decoration: line-through;
 }
 
+.text-decoration-underline {
+    text-decoration: underline;
+}
+
+
 .text-weight-bold {
     font-weight: bold;
 }
@@ -268,6 +273,11 @@
     width: 20%;
 }
 
+
+.w-25 {
+    width: 25%;
+}
+
 .w-30 {
     width: 30%;
 }
@@ -326,4 +336,61 @@
 
 .justify-content-space-between {
     justify-content: space-between;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.flex-grow-2 {
+    flex-grow: 2;
+}
+
+.flex-grow-3 {
+    flex-grow: 3;
+}
+
+.flex-grow-4 {
+    flex-grow: 4;
+}
+
+.flex-grow-5 {
+    flex-grow: 5;
+}
+
+.flex-grow-6 {
+    flex-grow: 6;
+}
+
+.flex-grow-7 {
+    flex-grow: 7;
+}
+
+.flex-grow-8 {
+    flex-grow: 8;
+}
+
+.flex-grow-9 {
+    flex-grow: 9;
+}
+
+.flex-grow-10 {
+    flex-grow: 10;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    scroll-margin: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }

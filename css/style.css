@@ -329,9 +329,9 @@ svg {
 
 input[type=text], input[type=password], input[type=email] {
     width: 100%;
-    padding: 12px 20px;
+    padding: 10px 15px;
     margin: 8px 0;
-    display: inline-block;
+    /* display: inline-block; */
     border: 2px solid #060606;
     border-radius: 5px;
     box-sizing: border-box;
@@ -344,7 +344,6 @@ button {
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
 }
 
 
@@ -418,10 +417,6 @@ p {
     transform-origin: 50% 50%;
 }
 
-.color ul {
-    display: inline-block;
-}
-
 .color ul li {
     display: initial;
 }
@@ -484,7 +479,7 @@ p {
 .input-number-increment {
     display: inline-block;
     width: 30px;
-    line-height: 38px;
+    /* line-height: 40px; */
     background: #f1f1f1;
     color: #444;
     text-align: center;
@@ -503,15 +498,39 @@ p {
 }
 
 .quantity > div {
+    display: inline-block;
+    /* height: 50px; */
     width: fit-content;
-    border: solid 2px red;
+    border: solid 3px #A51A1D;
     border-radius: 20px;
-    z-index: 100;
+    margin-left: 20px;
 }
 
+.product-info table tr {
+    line-height: 50px;
+}
 
+.product-info p {
+    font-size: 0.75em;
+    line-height: 1.5;
+}
 
+.product-img-thumbnail {
+    width: 82px;
+    height: inherit;
+    overflow-y: auto;
+    margin-right: 5px;
+    padding-right: 5px
+}
 
+.size button {
+    margin: 0px;
+}
+
+.quantity-number {
+    border: solid 1px #A51A1D;
+    border-radius: 40px;
+}
 
 
 

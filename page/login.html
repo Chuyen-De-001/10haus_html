@@ -75,13 +75,13 @@
 
       </nav>
     </div>
-    <div class="row">
-      <div class="col-6">
+    <div class="row mb-2">
+      <div class="col-7">
         <img src="../img/logo/Đăng%20ký%20user.jpg" class="w-100">
       </div>
-      <div class="col-6 login-form">
+      <div class="col-5 login-form">
         <div class="flex flex-direction-column">
-          <div class="flex flex-flow-row justify-content">
+          <div class="flex flex-flow-row justify-content mb-5">
             <div class="fex flex-direction-column">
               <img src="../img/logo/Logo%201.jpg" height="50px">
               <p class="text-uppercase text-center text-weight-bold">đăng nhập</p>
@@ -89,25 +89,26 @@
           </div>
           <div class="flex flex-flow-row justify-content">
             <form action="/action_page.php" method="post">
-              <div class="container">
+              <div class="mb-1">
                 <label for="uname"><b>Tên đăng nhập</b></label>
                 <input type="text" name="uname" required>
-
+              </div>
+              <div class="mb-1">
                 <label for="psw"><b>Mật khẩu</b></label>
                 <input type="password" name="psw" required>
-                <div class="flex flex-flow-row justify-content-space-between mb-4">
-                  <label>
-                    <input type="checkbox" checked="checked" name="remember"> Lưu thông tin
-                  </label>
-                  <a href="#" class="text-decoration-none text-black">Quên mật khẩu?</a>
-                </div>
-                <div class="text-center mb-1">
-                  <button type="submit" class="btn btn-danger btn-radius w-50 shadow text-uppercase">đăng nhập</button>
-                </div>
-                <p class="text-center">Chưa có tài khoản?
-                  <a href="register.html" style="color: #A51A1D" class="text-weight-bold text-decoration-none">Đăng ký ngay</a>
-                </p>
               </div>
+              <div class=" flex flex-flow-row justify-content-space-between mb-4">
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Lưu thông tin
+                </label>
+                <a href="#" class="text-decoration-none text-black">Quên mật khẩu?</a>
+              </div>
+              <div class="text-center mb-1">
+                <button type="submit" class="btn btn-danger btn-radius w-50 shadow text-uppercase">đăng nhập</button>
+              </div>
+              <p class="text-center">Chưa có tài khoản?
+                <a href="register.html" style="color: #A51A1D" class="text-weight-bold text-decoration-none">Đăng ký ngay</a>
+              </p>
             </form>
           </div>
         </div>

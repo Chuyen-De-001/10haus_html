@@ -75,7 +75,7 @@
 
       </nav>
     </div>
-    <div class="banner-sub">
+    <div class="banner-sub mb-1">
       <div class="row">
         <div class="col-6">
           <div class="banner-sub-left">
@@ -103,10 +103,10 @@
         </div>
       </div>
     </div>
-    <p style="padding: 15px"><span class="text-uppercase">10haus</span> / <span>Sản phẩm giảm giá</span> /
+    <p style="padding: 10px"><span class="text-uppercase">10haus</span> / <span>Sản phẩm giảm giá</span> /
       <span class="text-uppercase text-weight-bold">BEIGE CONCEPT T-SHIRT</span>
     </p>
-    <div class="row">
+    <div class="row mb-3">
       <div class="col-6">
         <div class="flex" style="height: 500px">
           <div class="product-img-thumbnail">
@@ -123,7 +123,7 @@
       </div>
       <div class="col-6">
         <h2>BLACK CONCEPT T-SHIRT</h2>
-        <div class="rate-start">
+        <div class="rate-start mb-3">
           <span class="star-icon filled">★</span>
           <span class="star-icon filled">★</span>
           <span class="star-icon filled">★</span>
@@ -131,32 +131,23 @@
           <span class="star-icon">★</span>
           <span class="reviews-text">(25)</span>
         </div>
-        <h5 class="mb-3">
-          <svg width="84" height="15" viewBox="0 0 84 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7.60845 0L9.40456 5.52786H15.2169L10.5146 8.94427L12.3107 14.4721L7.60845 11.0557L2.90617 14.4721L4.70228 8.94427L0 5.52786H5.81234L7.60845 0Z" fill="#A51A1D"/>
-            <path d="M24.6085 0L26.4046 5.52786H32.2169L27.5146 8.94427L29.3107 14.4721L24.6085 11.0557L19.9062 14.4721L21.7023 8.94427L17 5.52786H22.8123L24.6085 0Z" fill="#A51A1D"/>
-            <path d="M41.6085 0L43.4046 5.52786H49.2169L44.5146 8.94427L46.3107 14.4721L41.6085 11.0557L36.9062 14.4721L38.7023 8.94427L34 5.52786H39.8123L41.6085 0Z" fill="#A51A1D"/>
-            <path d="M58.6085 0L60.4046 5.52786H66.2169L61.5146 8.94427L63.3107 14.4721L58.6085 11.0557L53.9062 14.4721L55.7023 8.94427L51 5.52786H56.8123L58.6085 0Z" fill="#A51A1D"/>
-            <path d="M75.6085 0L77.4046 5.52786H83.2169L78.5146 8.94427L80.3107 14.4721L75.6085 11.0557L70.9062 14.4721L72.7023 8.94427L68 5.52786H73.8123L75.6085 0Z" fill="#D9D9D9"/>
-          </svg>
-        </h5>
-        <div class="h-divider"></div>
-        <h2 class="mt-2 mb-2">
+        <div class="h-divider-none-margin"></div>
+        <h2 class="mb-2 mt-2">
           450.000 VNĐ
         </h2>
         <div class="product-info">
-          <table class="w-100">
+          <table class="w-100 mb-2">
             <tr>
               <td class="w-20 text-uppercase">Màu sắc</td>
               <td class="color">
                 <ul class="flex flex-flow-row">
                   <li>
                     <input type="radio" name="color" id="color_black">
-                    <label for="color_black" class="ml-2"><img src="../img/icon/black.png"/></label>
+                    <label for="color_black"><img src="../img/icon/black.png"/></label>
                   </li>
                   <li>
                     <input type="radio" name="color" id="color_brow">
-                    <label for="color_brow" class="ml-2">
+                    <label for="color_brow">
                       <img src="../img/icon/brow.png"/>
                     </label>
                   </li>
@@ -169,23 +160,23 @@
                 <ul>
                   <li>
                     <input type="radio" name="size" id="size_s">
-                    <label for="size_s" class="ml-2"><img src="../img/icon/size-s.png"/></label>
+                    <label for="size_s"><img src="../img/icon/size-s.png"/></label>
                   </li>
                   <li>
                     <input type="radio" name="size" id="size_m">
-                    <label for="size_m" class="ml-2">
+                    <label for="size_m">
                       <img src="../img/icon/size_m.png"/>
                     </label>
                   </li>
                   <li>
                     <input type="radio" name="size" id="size_l">
-                    <label for="size_l" class="ml-2">
+                    <label for="size_l">
                       <img src="../img/icon/size_l.png"/>
                     </label>
                   </li>
                   <li>
                     <input type="radio" name="size" id="size_xl">
-                    <label for="size_xl" class="ml-2">
+                    <label for="size_xl">
                       <img src="../img/icon/size-xl.png"/>
                     </label>
                   </li>
@@ -196,31 +187,35 @@
             <tr>
               <td class="w-20">Số lượng:</td>
               <td class="quantity">
-                <div>
-                  <span class="input-number-decrement" onclick="quantity_down()">–</span>
-                  <input class="input-number" id="quantity_value" type="text" value="1" min="0" max="10">
-                  <span class="input-number-increment" onclick="quantity_up()">+</span>
-                </div>
+                <ul>
+                  <li>
+                    <span class="input-number-decrement" onclick="quantity_down()">–</span>
+                    <input class="input-number" id="quantity_value" type="text" value="1" min="0" max="10">
+                    <span class="input-number-increment" onclick="quantity_up()">+</span>
+                  </li>
+                </ul>
                 <button class="btn btn-danger btn-radius text-uppercase shadow pull-right">thêm vào giỏ hàng</button>
               </td>
             </tr>
           </table>
-          <div class="h-divider mt-4 mb-3"></div>
-          <div class="col-6">
-            <h3 class="text-danger text-weight-bold mb-2 text-decoration-underline">THÔNG TIN SẢN PHẨM</h3>
-            <p><span class="text-weight-bold">Chất liệu:</span> 100% cotton hai chiều</p>
-            <p><span class="text-weight-bold">Định lượng vải:</span> 320 gsm</p>
-            <p><span class="text-weight-bold">Form:</span> Oversized/p>
-            <p>
-              <span class="text-weight-bold">Đặc điểm sản phẩm:</span> Hình họa được in lụa, logo đúc kim loại trước ngực áo
-            </p>
-          </div>
-          <div class="col-6">
-            <h3 class="text-weight-bold text-danger mb-2 text-decoration-underline">BẢNG SIZE</h3>
-            <p><span class="text-weight-bold">Size S:</span> Dài 66cm - ngang 54cm</p>
-            <p><span class="text-weight-bold">Size M:</span> Dài 70cm - ngang 56cm</p>
-            <p><span class="text-weight-bold">Size L:</span> Dài 74cm - ngang 58cm</p>
-            <p><span class="text-weight-bold">Size XL:</span> Dài 78cm - ngang 60cm</p>
+          <div class="h-divider-none-margin"></div>
+          <div class="row mt-2">
+            <div class="col-6">
+              <h3 class="text-danger text-weight-bold mb-2 text-decoration-underline">THÔNG TIN SẢN PHẨM</h3>
+              <p><span class="text-weight-bold">Chất liệu:</span> 100% cotton hai chiều</p>
+              <p><span class="text-weight-bold">Định lượng vải:</span> 320 gsm</p>
+              <p><span class="text-weight-bold">Form:</span> Oversized/p>
+              <p>
+                <span class="text-weight-bold">Đặc điểm sản phẩm:</span> Hình họa được in lụa, logo đúc kim loại trước ngực áo
+              </p>
+            </div>
+            <div class="col-6">
+              <h3 class="text-weight-bold text-danger mb-2 text-decoration-underline">BẢNG SIZE</h3>
+              <p><span class="text-weight-bold">Size S:</span> Dài 66cm - ngang 54cm</p>
+              <p><span class="text-weight-bold">Size M:</span> Dài 70cm - ngang 56cm</p>
+              <p><span class="text-weight-bold">Size L:</span> Dài 74cm - ngang 58cm</p>
+              <p><span class="text-weight-bold">Size XL:</span> Dài 78cm - ngang 60cm</p>
+            </div>
           </div>
           <div>
 
@@ -230,9 +225,9 @@
     </div>
 
     <div class="box-comment">
-      <h3 class="text-danger text-uppercase mt-2 mb-2">
+      <h3 class="text-danger text-uppercase p-1">
         <span class="text-decoration-underline">Đánh giá sản phẩm</span> (25 đánh giá)</h3>
-      <div class="row">
+      <div class="row mb-2">
         <div class="col-4">
           <div>
             <p><b>Khách hàng:</b> Huy Nguyen</p>
@@ -336,7 +331,7 @@
           </div>
         </div>
       </div>
-      <div class="text-center mt-4 mb-3">
+      <div class="text-center">
         <div class="pagination">
           <a href="#">&laquo;</a>
           <a href="#" class="active">1</a>
@@ -348,8 +343,8 @@
       </div>
     </div>
     <div class="h-divider"></div>
-    <h4 class="text-uppercase text-decoration-underline mt-2">có thể bạn cũng thích</h4>
-    <div class="row">
+    <h4 class="text-uppercase text-decoration-underline p-1">có thể bạn cũng thích</h4>
+    <div class="row mb-2">
       <div class="col-3">
         <div class="product">
           <img src="../img/product/product_detail/you_like/230b24e43ab1e43080c0fbbd86b05c0c.jpg">
@@ -403,7 +398,7 @@
         </div>
       </div>
     </div>
-    <div class="text-center mb-4 mt-2">
+    <div class="text-center mb-4">
       <div class="pagination">
         <a href="#" class="active">«</a>
         <a href="#">»</a>

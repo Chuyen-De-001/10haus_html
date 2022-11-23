@@ -8,6 +8,7 @@
 
 body {
     font-family: "Roboto";
+    font-size: 14px;
 }
 
 :root {
@@ -25,7 +26,7 @@ body {
     align-items: center;
     justify-content: flex-start;
     /* font-family: Montserrat, sans-serif; */
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
     background-color: white;
 }
 
@@ -88,6 +89,9 @@ body {
 
 .header {
     padding: 10px 0px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    /* margin: 20px 0; */
 }
 
 .banner-sub-left, .banner-sub-right {
@@ -173,7 +177,7 @@ body {
 }
 
 .footer .footer-item p {
-    margin: 10px 0px;
+    margin: 5px 0px;
 }
 
 .footer-item-icon {
@@ -329,7 +333,7 @@ svg {
 input[type=text], input[type=password], input[type=email] {
     width: 100%;
     padding: 10px 15px;
-    margin: 8px 0;
+    /* margin: 8px 0; */
     /* display: inline-block; */
     border: 2px solid #060606;
     border-radius: 5px;
@@ -419,6 +423,7 @@ p {
 
 .color ul li {
     display: initial;
+    margin: 0px 5px;
 }
 
 .color {
@@ -457,6 +462,7 @@ p {
 
 .size ul li {
     display: initial;
+    margin: 0px 5px;
 }
 
 .size {
@@ -469,12 +475,23 @@ p {
 }
 
 .quantity input {
-    width: 50px;
+    width: 35px;
     border: none;
     outline: none;
     margin: 0px;
     padding: 10px 5px;
     text-align: center;
+}
+
+.quantity ul {
+    display: inline-block;
+}
+
+.quantity ul li {
+    border: solid 3px #A51A1D;
+    border-radius: 40px;
+    line-height: 35px;
+    margin: 0px 5px;
 }
 
 .input-number-decrement,
@@ -512,7 +529,7 @@ p {
 }
 
 .product-info p {
-    font-size: 0.75em;
+    /* font-size: 0.75em; */
     line-height: 1.5;
 }
 
@@ -552,16 +569,26 @@ p {
     vertical-align: middle;
 }
 
-.box-comment > div span, p {
-    font-size: 0.75em;
-    line-height: 1.5;
+.box-comment > div > span, p {
+    /* font-size: 0.75em; */
+    /* line-height: 1.5; */
 }
 
 .box-comment > div.row div.col-4 > div {
     border: solid 2px black;
     border-radius: 20px;
     padding: 10px;
-    height: 135px;
+    height: 200px;
+    overflow: auto;
+}
+
+.box-comment div.col-4 > div::-webkit-scrollbar {
+    display: none;
+}
+
+.box-comment div.col-4 > div {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
 }
 
 button {
@@ -585,4 +612,9 @@ button {
 .box-cart > table td {
     border: solid 1px black;
     text-align: center;
+}
+
+input {
+    margin: 2px 0px 0px 0px;
+
 }

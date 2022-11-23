@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/responsive.css">
-  <title>Register</title>
+  <title>10 Haus - Register</title>
 </head>
 <body>
 <div class="container-flush">
@@ -75,13 +75,13 @@
 
       </nav>
     </div>
-    <div class="row">
-      <div class="col-6">
+    <div class="row mb-2">
+      <div class="col-7">
         <img src="../img/logo/Đăng%20ký%20user.jpg" class="w-100">
       </div>
-      <div class="col-6">
-        <div class="flex flex-direction-column">
-          <div class="flex flex-flow-row justify-content">
+      <div class="col-5">
+        <div class="flex flex-direction-column justify-content">
+          <div class="flex flex-flow-row justify-content mb-5">
             <div class="fex flex-direction-column">
               <h2 class="text-uppercase text-weight-bold text-danger">thông tin đăng ký</h2>
             </div>
@@ -89,23 +89,35 @@
           <div class="flex flex-flow-row justify-content">
             <form action="#" method="post">
               <div class="container">
-                <label for="uname"><b>Tên đăng nhập</b></label>
-                <input type="text" name="uname" required>
+                <div class="mb-1">
+                  <label for="uname"><b>Tên đăng nhập</b></label>
+                  <input type="text" name="uname" required>
+                </div>
 
-                <label for="fullname"><b>Họ và tên</b></label>
-                <input type="text" name="fullname" required>
+                <div class="mb-1">
+                  <label for="fullname"><b>Họ và tên</b></label>
+                  <input type="text" name="fullname" required>
+                </div>
 
-                <label for="email"><b>Email</b></label>
-                <input type="email" name="email" required>
+                <div class="mb-1">
+                  <label for="email"><b>Email</b></label>
+                  <input type="email" name="email" required>
+                </div>
 
-                <label for="phonenumber"><b>Phone number</b></label>
-                <input type="text" name="phonenumber" required>
+                <div class="mb-1">
+                  <label for="phonenumber"><b>Phone number</b></label>
+                  <input type="text" name="phonenumber" required>
+                </div>
 
-                <label for="psw"><b>Mật khẩu (Tối thiểu 8 ký tự)</b></label>
-                <input type="password" name="psw" required minlength="8">
+                <div class="mb-1">
+                  <label for="psw"><b>Mật khẩu (Tối thiểu 8 ký tự)</b></label>
+                  <input type="password" name="psw" required minlength="8">
+                </div>
 
-                <label for="re-psw"><b>Nhập lại mật khẩu (Tối thiểu 8 ký tự)</b></label>
-                <input type="password" name="re-psw" required minlength="8">
+                <div class="mb-1">
+                  <label for="re-psw"><b>Nhập lại mật khẩu (Tối thiểu 8 ký tự)</b></label>
+                  <input type="password" name="re-psw" required minlength="8">
+                </div>
                 <div class="text-center mb-1">
                   <button type="submit" class="btn btn-danger btn-radius w-50 shadow text-uppercase">đăng ký</button>
                 </div>

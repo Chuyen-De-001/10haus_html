@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <title>10 Haus - Order</title>
+</head>
+<body>
+<div class="container-flush">
+  <div class="container">
+    <div class="header">
+      <nav class="nav nav-3">
+        <a class="nav-logo" href="#">
+          <img src="../img/logo/Logo%201.jpg" style="height: 50px">
+        </a>
+        <ul class="nav-list menu">
+          <li>
+            <a href="#">TRANG CHỦ</a>
+          </li>
+          <li>
+            <a href="page/about.html">GIỚI THIỆU</a>
+          </li>
+          <li>
+            <a href="#">SẢN PHẨM</a>
+            <ul class="sub-menu shadow">
+              <li>
+                <a href="#">Tất cả sản phẩm
+                </a>
+                <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 336 511.46">
+                  <path fill-rule="nonzero" d="M0 469V42.42c.02-9.89 3.46-19.81 10.45-27.85 15.39-17.66 42.2-19.53 59.86-4.15L321.46 229.2c1.69 1.51 3.32 3.17 4.81 4.97 14.92 18.04 12.4 44.78-5.64 59.7L71.14 500.3c-7.56 6.93-17.62 11.16-28.68 11.16C19.02 511.46 0 492.44 0 469z"/>
+                </svg>
+                <ul class="sub-menu shadow">
+                  <li><a href="#">Áo</a></li>
+                  <li><a href="#">Quần</a></li>
+                  <li><a href="#">Váy</a></li>
+                  <li><a href="#">Giày dép</a></li>
+                  <li><a href="#">Phụ kiện</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Các sản phẩm bán chạy</a></li>
+              <li><a href="#">Sản phẩm giảm giá</a></li>
+              <li><a href="#">Sản phẩm mới</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">LIÊN HỆ</a>
+          </li>
+        </ul>
+        <ul class="nav-list">
+          <li>
+            <div class="dropdown">
+              <a href="javascript:void(0)" class="btn-dropdown">
+                <img src="../img/logo/Icon%202.png" style="height: 30px">
+              </a>
+              <div class="dropdown-content">
+                <input type="text" style="width: 100%;height: 40px;padding: 0px 20px;border-radius: 50px;border: none;" placeholder="Search...">
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <img src="../img/logo/Icon%201.png" style="height: 30px">
+            </a>
+          </li>
+          <li>
+            <a href="page/login.html" class="btn-dropdown">
+              <img src="../img/logo/Icon%203.png" style="height: 30px">
+            </a>
+          </li>
+        </ul>
+
+      </nav>
+    </div>
+    <div class="row mt-1">
+      <div class="col-6">
+        <div class="order-info container">
+          <div class="mb-2">
+            <h3 class="text-danger text-uppercase text-decoration-underline mb-2">thông tin đơn hàng</h3>
+            <input type="text" name="order-info-name" value="Huy Nguyen" class="w-100 mb-1">
+            <input type="text" name="order-info-phone" value="0989083342" class="w-100 mb-1">
+            <input type="email" name="order-info-email" value="huyng1605@gmail.com" class="w-100 mb-1">
+            <div class="flex flex-flow-row justify-content-space-between mb-1 border">
+              <div class="w-100">
+                <select class="border-bold border-radius-5 w-90" style="height: 40px" required>
+                  <option value="" disabled selected>Tỉnh/Thành Phố</option>
+                  <option value="ha_noi">Hà Nội</option>
+                  <option value="tp_hcm">TP HCM</option>
+                  <option value="da_nang">Đà Nẵng</option>
+                  <option>Huế</option>
+                </select>
+              </div>
+              <div class="w-100">
+                <select class="border-bold border-radius-5 w-90" style="height: 40px" required>
+                  <option value="" disabled selected>Quận/Huyện</option>
+                </select>
+              </div>
+              <div class="w-100">
+                <select class="border-bold border-radius-5 w-90" style="height: 40px" required>
+                  <option value="" disabled selected>Phường/Xã</option>
+                </select>
+              </div>
+            </div>
+            <input type="text" name="order-info-address" placeholder="Địa chỉ cụ thể (Số nhà, đường,...)" class="w-100 mb-1">
+          </div>
+          <div class="method-payment">
+            <h3 class="text-uppercase text-danger text-decoration-underline mb-2">phương thức thanh toán</h3>
+            <ul>
+              <li>
+                <label for="pay_cod">Thanh toán COD</label>
+                <input type="radio" id="pay_cod" value="pay_cod" name="payment_method">
+              </li>
+              <li>
+                <label for="pay_bank">Thanh toán chuyển khoản</label>
+                <input type="radio" id="pay_bank" value="pay_bank" name="payment_method">
+              </li>
+              <li>
+                <label for="pay_app">Thanh toán qua ví điện tử</label>
+                <input type="radio" id="pay_app" value="pay_app" name="payment_method">
+              </li>
+              <li>
+                <label for="pay_credits">Thanh toán qua thẻ tín dụng/ thẻ ghi nợ</label>
+                <input type="radio" id="pay_credits" value="pay_credits" name="payment_method">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <h3 class="text-danger"><span class="text-uppercase">đơn hàng</span> (5 sản phẩm)</h3>
+        <div>
+          <div class="flex flex-direction-column">
+            <div class="w-20">
+
+            </div>
+            <div class="flex-grow-1"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

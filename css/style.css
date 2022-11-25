@@ -616,5 +616,35 @@ button {
 
 input {
     margin: 2px 0px 0px 0px;
+}
 
+select:required:invalid {
+    color: #999;
+}
+
+select:valid {
+    color: black;
+}
+
+option[value=""][disabled] {
+    display: none;
+}
+
+select {
+    color: black;
+}
+
+.method-payment ul li {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 5px 0px;
+    border: solid 2px black;
+    border-radius: 5px;
+}
+
+.banner-sub-title p {
+    line-height: 1.5;
 }

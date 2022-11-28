@@ -1,3 +1,7 @@
+:root {
+    --red-color: #A51A1D;
+}
+
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
 /* Basic reset */
 * {
@@ -162,7 +166,7 @@ body {
 /*  end product */
 
 .footer {
-    background: #A51A1D;
+    background: var(--red-color);
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -218,7 +222,7 @@ body {
     text-decoration: none;
     display: block;
     font-weight: normal;
-    border: solid 1px #A51A1D;
+    border: solid 1px var(--red-color);
 }
 
 .dropdown-content a:not(:last-child) {
@@ -242,7 +246,7 @@ body {
 
 .nav > li > a {
     text-transform: uppercase;
-    color: #A51A1D;
+    color: var(--red-color);
 }
 
 .menu > li {
@@ -291,7 +295,7 @@ body {
 }
 
 .menu .sub-menu > li {
-    border: solid 1px #A51A1D;
+    border: solid 1px var(--red-color);
     width: 100%;
     position: relative;
 }
@@ -385,10 +389,10 @@ p {
 }
 
 .pagination a.active {
-    color: #A51A1D;
+    color: var(--red-color);
     background: white;
     font-weight: bold;
-    border: solid 3px #A51A1D;
+    border: solid 3px var(--red-color);
     padding: 7px 13px;
 }
 
@@ -396,7 +400,7 @@ p {
     text-decoration: none;
     color: white;
     padding: 10px 15px;
-    background: #A51A1D;
+    background: var(--red-color);
     border-radius: 50px;
 }
 
@@ -409,7 +413,7 @@ p {
 }
 
 .color ul li :checked + label img {
-    border: solid 3px red;
+    border: solid 3px var(--red-color);
     border-radius: 50px;
     padding: 1px;
 }
@@ -444,7 +448,7 @@ p {
 }
 
 .size ul li :checked + label img {
-    border: solid 3px red;
+    border: solid 3px var(--red-color);
     border-radius: 50px;
     padding: 1px;
 }
@@ -488,7 +492,7 @@ p {
 }
 
 .quantity ul li {
-    border: solid 3px #A51A1D;
+    border: solid 3px var(--red-color);
     border-radius: 40px;
     line-height: 35px;
     margin: 0px 5px;
@@ -519,7 +523,7 @@ p {
 .quantity > div {
     display: inline-block;
     line-height: 35px;
-    border: solid 3px #A51A1D;
+    border: solid 3px var(--red-color);
     border-radius: 20px;
     margin-left: 20px;
 }
@@ -546,7 +550,7 @@ p {
 }
 
 .quantity-number {
-    border: solid 1px #A51A1D;
+    border: solid 1px var(--red-color);
     border-radius: 40px;
 }
 
@@ -557,7 +561,7 @@ p {
 }
 
 .star-icon.filled {
-    color: #A51A1D;
+    color: var(--red-color);
 }
 
 .reviews-text {
@@ -648,3 +652,32 @@ select {
 .banner-sub-title p {
     line-height: 1.5;
 }
+
+.cart {
+    position: relative;
+}
+
+.cart span {
+    left: 16px;
+    background: var(--red-color);
+    padding: 3px 7px;
+    border-radius: 50px;
+    color: white;
+    position: absolute;
+    top: 15px;
+}
+
+
+input.has-error {
+    border: solid 2px var(--red-color);
+}
+
+.error-message {
+    color: var(--red-color);
+}
+
+.display-block {
+    display: block;
+}
+
+

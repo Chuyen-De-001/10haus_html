@@ -81,13 +81,13 @@
 			</div>
 			<div class="col-5 login-form">
 				<div class="flex flex-direction-column">
-					<div class="flex flex-flow-row justify-content mb-5">
+					<div class="flex flex-flow-row justify-content mb-3">
 						<div class="fex flex-direction-column">
 							<img src="../img/logo/Logo%201.jpg" height="50px">
 							<p class="text-uppercase text-center text-weight-bold">đăng nhập</p>
 						</div>
 					</div>
-					<p class="error-message text-center">Sai mật khẩu hoặc tài khoản</p>
+					<p class="error-message text-center text-weight-bold" name="error-message"></p>
 					<div class="flex flex-flow-row justify-content">
 						<form action="index.html" method="post" onsubmit="return login()">
 							<div class="mb-1">
@@ -152,10 +152,15 @@
 		password: '123456',
 	};
 
-	function login(event) {
-		var username = document.querySelector('input[name=uname]');
-		var password = document.querySelector('input[name=psw]');
-		if(username.value !== user.username || password !== user.password) {
+	function login() {
+		console.log(user);
+		var username      = document.querySelector('input[name=uname]');
+		var password      = document.querySelector('input[name=psw]');
+		var error_message = document.querySelector('p[name=error-message]');
+		console.log(username.value);
+		console.log(password.value);
+		if(username.value !== user.username || password.value !== user.password) {
+			error_message.innerHTML = "Sai mật khẩu hoặc tài khoản";
 			username.classList.add("has-error");
 			password.classList.add("has-error");
 			return false;

@@ -13,7 +13,7 @@
 </head>
 <body>
 <div class="container-flush">
-  <div class="container">
+  <div class="container mb-3">
     <div class="header mb-2">
       <nav class="nav nav-3">
         <a class="nav-logo" href="#">
@@ -88,35 +88,158 @@
 
       </nav>
     </div>
-    <div class="flex flex-flow-row">
-      <div class="w-30">
+    <div class="row">
+      <div class="col-3">
         <h2 class="text-danger text-uppercase">Trang tài khoản</h2>
         <p class="mb-2"><span>Xin chào</span>, <span class="text-weight-bold">Huy Nguyen</span></p>
         <h3 class="text-uppercase text-weight-bold mb-2">Thông tin tài khoản</h3>
         <h3 class="text-danger text-uppercase text-weight-bold mb-2">Đơn hàng của bạn</h3>
       </div>
-      <div class="flex flex-direction-column flex-grow-1">
-        <h2 class="text-uppercase">Đơn hàng của bạn</h2>
-        <div class="w-100">
-          <div class="tab">
-            <button class="tablinks text-uppercase" onclick="openCity(event, 'London')">London</button>
-            <button class="tablinks text-uppercase" onclick="openCity(event, 'Paris')">Paris</button>
-            <button class="tablinks text-uppercase" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-          </div>
-          <!-- Tab content -->
-          <div id="London" class="tabcontent">
-            <h3>London</h3>
-            <p>London is the capital city of England.</p>
-          </div>
+      <div class="col-9">
+        <div class="flex flex-direction-column flex-grow-1">
+          <h2 class="text-uppercase">Đơn hàng của bạn</h2>
+          <div class="w-100">
+            <div class="tab">
+              <button class="tablinks text-uppercase active" onclick="openCity(event, 'dang_giao_hang')">đang giao hàng</button>
+              <button class="tablinks text-uppercase" onclick="openCity(event, 'cho_xac_nhan')">chờ xác nhận</button>
+              <button class="tablinks text-uppercase" onclick="openCity(event, 'da_giao_hang')">Đã giao hàng</button>
+            </div>
+            <!-- Tab content -->
+            <div id="dang_giao_hang" class="tabcontent" style="display: block">
+              <div class="mt-1">
+                <table class="w-100">
+                  <thead>
+                  <tr>
+                    <th class="text-uppercase">Mã đơn hàng</th>
+                    <th class="text-uppercase">Ngày đặt</th>
+                    <th class="text-uppercase">Địa chỉ giao hàng</th>
+                    <th class="text-uppercase">danh sách sản phẩm</th>
+                    <th class="text-uppercase">Tổng tiền</th>
+                    <th class="text-uppercase">thanh toán</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td class="text-danger text-decoration-underline text-weight-bold">4511</td>
+                    <td>3/11/2022</td>
+                    <td>16 Nguyễn An Ninh, Tương Mai, Hoàng Mai, Hà Nội</td>
+                    <td>BEIGE CONCEPT T-SHIRT x1</td>
+                    <td>450.000 VNĐ</td>
+                    <td>Thanh toán
+                      khi nhận hàng
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
 
-          <div id="Paris" class="tabcontent">
-            <h3>Paris</h3>
-            <p>Paris is the capital of France.</p>
-          </div>
+            <div id="cho_xac_nhan" class="tabcontent">
+              <div class="mt-1">
+                <table class="w-100">
+                  <thead>
+                  <tr>
+                    <th class="text-uppercase">Mã đơn hàng</th>
+                    <th class="text-uppercase">Ngày đặt</th>
+                    <th class="text-uppercase">Địa chỉ giao hàng</th>
+                    <th class="text-uppercase">danh sách sản phẩm</th>
+                    <th class="text-uppercase">Tổng tiền</th>
+                    <th class="text-uppercase">thanh toán</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td class="text-danger text-decoration-underline text-weight-bold">4511</td>
+                    <td>3/11/2022</td>
+                    <td>16 Nguyễn An Ninh, Tương Mai, Hoàng Mai, Hà Nội</td>
+                    <td>BEIGE CONCEPT T-SHIRT x1</td>
+                    <td>450.000 VNĐ</td>
+                    <td>Thanh toán
+                      khi nhận hàng
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
 
-          <div id="Tokyo" class="tabcontent">
-            <h3>Tokyo</h3>
-            <p>Tokyo is the capital of Japan.</p>
+            <div id="da_giao_hang" class="tabcontent">
+              <div class="mt-1">
+                <table class="w-100">
+                  <thead>
+                  <tr>
+                    <th class="text-uppercase">Mã đơn hàng</th>
+                    <th class="text-uppercase">Ngày đặt</th>
+                    <th class="text-uppercase">Địa chỉ giao hàng</th>
+                    <th class="text-uppercase">danh sách sản phẩm</th>
+                    <th class="text-uppercase">Tổng tiền</th>
+                    <th class="text-uppercase">thanh toán</th>
+                    <th class="text-uppercase">đánh giá</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td class="text-danger text-decoration-underline text-weight-bold">4511</td>
+                    <td>3/11/2022</td>
+                    <td>16 Nguyễn An Ninh, Tương Mai, Hoàng Mai, Hà Nội</td>
+                    <td>BEIGE CONCEPT T-SHIRT x1</td>
+                    <td>450.000 VNĐ</td>
+                    <td>Thanh toán
+                      khi nhận hàng
+                    </td>
+                    <td style="min-width: 110px">
+                      <button class="btn btn-danger btn-radius">Đánh giá</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-danger text-decoration-underline text-weight-bold">4511</td>
+                    <td>3/11/2022</td>
+                    <td>16 Nguyễn An Ninh, Tương Mai, Hoàng Mai, Hà Nội</td>
+                    <td>BEIGE CONCEPT T-SHIRT x1</td>
+                    <td>450.000 VNĐ</td>
+                    <td>Thanh toán
+                      khi nhận hàng
+                    </td>
+                    <td>Đã đánh giá</td>
+                  </tr>
+                  <tr>
+                    <td class="text-danger text-decoration-underline text-weight-bold">4511</td>
+                    <td>3/11/2022</td>
+                    <td>16 Nguyễn An Ninh, Tương Mai, Hoàng Mai, Hà Nội</td>
+                    <td>BEIGE CONCEPT T-SHIRT x1</td>
+                    <td>450.000 VNĐ</td>
+                    <td>Thanh toán
+                      khi nhận hàng
+                    </td>
+                    <td>Đã đánh giá</td>
+                  </tr>
+                  <tr>
+                    <td class="text-danger text-decoration-underline text-weight-bold">4511</td>
+                    <td>3/11/2022</td>
+                    <td>16 Nguyễn An Ninh, Tương Mai, Hoàng Mai, Hà Nội</td>
+                    <td>BEIGE CONCEPT T-SHIRT x1</td>
+                    <td>450.000 VNĐ</td>
+                    <td>Thanh toán
+                      khi nhận hàng
+                    </td>
+                    <td>Đã đánh giá</td>
+                  </tr>
+                  <tr>
+                    <td class="text-danger text-decoration-underline text-weight-bold">4511</td>
+                    <td>3/11/2022</td>
+                    <td>16 Nguyễn An Ninh, Tương Mai, Hoàng Mai, Hà Nội</td>
+                    <td>BEIGE CONCEPT T-SHIRT x1</td>
+                    <td>450.000 VNĐ</td>
+                    <td>Thanh toán
+                      khi nhận hàng
+                    </td>
+                    <td>Đã đánh giá</td>
+                  </tr>
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -1,12 +1,12 @@
 function updateFieldTongTien() {
-	var cart_tongtien       = document.querySelector("#cart-tong-tien");
+	const cart_tongtien     = document.querySelector("#cart-tong-tien");
 	cart_tongtien.innerHTML = showMoney(getTongTien()) + " VNĐ";
 }
 
 function deleteToCart(e) {
-	const btn_remove = e.target;
-	const tr         = btn_remove.closest('tr');
-	var confirm_bool = confirm("Bạn muốn xoá sản phẩm ra khỏi giỏ hàng?");
+	const btn_remove   = e.target;
+	const tr           = btn_remove.closest('tr');
+	const confirm_bool = confirm("Bạn muốn xoá sản phẩm ra khỏi giỏ hàng?");
 	if(confirm_bool === true) {
 		tr.remove();
 	}
@@ -15,20 +15,20 @@ function deleteToCart(e) {
 }
 
 function updateQuantity(int, event) {
-	var btn = event.target;
-	var tr  = btn.closest("tr");
-	var td  = btn.closest("td");
+	const btn = event.target;
+	const tr  = btn.closest("tr");
+	const td  = btn.closest("td");
 	if(updateFieldSoLuong(td, int) === true) {
 		updateFieldThanhTien(tr, td);
 	}
-	updateFieldTongTIen();
+	updateFieldTongTien();
 }
 
 function updateFieldThanhTien(tr, td) {
-	var don_gia             = getFieldDonGia(tr);
-	var so_luong            = td.querySelector("input[type=text]").value;
-	var thanh_tien_td       = tr.querySelector("td:nth-child(7)");
-	var thanh_tien          = Number(don_gia) * Number(so_luong);
+	const don_gia           = getFieldDonGia(tr);
+	const so_luong          = td.querySelector("input[type=text]").value;
+	const thanh_tien_td     = tr.querySelector("td:nth-child(7)");
+	const thanh_tien        = Number(don_gia) * Number(so_luong);
 	thanh_tien_td.innerHTML = showMoney(thanh_tien) + " VNĐ";
 	thanh_tien_td.setAttribute("data-value", thanh_tien);
 	updateFieldTongTien();
@@ -45,14 +45,14 @@ function updateFieldSoLuong(td, int) {
 }
 
 function getFieldDonGia(tr) {
-	var don_gia = tr.querySelector("td:nth-child(3)").getAttribute("data-value");
+	const don_gia = tr.querySelector("td:nth-child(3)").getAttribute("data-value");
 	return Number(don_gia);
 }
 
 function getTongTien() {
-	var table     = document.querySelector("div.box-cart table");
-	var trs       = table.rows;
-	var tong_tien = 0;
+	const table   = document.querySelector("div.box-cart table");
+	const trs     = table.rows;
+	let tong_tien = 0;
 	for(let i = 0; i < trs.length; i++) {
 		let td = trs[i].querySelector("td:nth-child(7)");
 		console.log(td);

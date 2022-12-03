@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="../css/main.css">
 	<link rel="stylesheet" href="../css/responsive.css">
 	<title>10 Haus - Product Detail</title>
+
 </head>
 <body>
 <div class="container-flush">
@@ -205,7 +206,7 @@
 										<span class="input-number-increment" onclick="quantity_up()">+</span>
 									</li>
 								</ul>
-								<button class="btn btn-danger btn-radius text-uppercase shadow pull-right">thêm vào giỏ hàng</button>
+								<button class="btn btn-danger btn-radius text-uppercase shadow pull-right" onclick="updateQuantity(1)">thêm vào giỏ hàng</button>
 							</td>
 						</tr>
 					</table>
@@ -449,21 +450,7 @@
 		</div>
 	</div>
 </div>
-<script>
-	function quantity_up() {
-		var input   = document.getElementById('quantity_value');
-		input.value = parseInt(input.value) + 1;
-	}
-
-	function quantity_down() {
-		var input    = document.getElementById('quantity_value');
-		var quantity = parseInt(input.value);
-		if(quantity > 1) {
-			input.value = quantity - 1;
-		} else {
-			input.value = 1;
-		}
-	}
-</script>
+<script src="../js/custom.js"></script>
+<script src="../js/product_detail.js"></script>
 </body>
 </html>

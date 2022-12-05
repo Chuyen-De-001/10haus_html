@@ -75,6 +75,10 @@
     padding: 0px !important;
 }
 
+.p-2 {
+    padding: 20px !important;
+}
+
 .p-1 {
     padding: 10px;
 }
@@ -421,4 +425,8 @@ px-1 {
 
 .px-5 {
     padding: 0px 50px;
+}
+
+.display-block {
+    display: block;
 }

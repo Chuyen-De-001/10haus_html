@@ -140,21 +140,58 @@
 						<h3 class="text-uppercase text-danger text-decoration-underline mb-2">phương thức thanh toán</h3>
 						<ul>
 							<li>
-								<label for="pay_cod">Thanh toán COD</label>
-								<input type="radio" id="pay_cod" value="pay_cod" name="payment_method">
+								<div class="w-100 p-1">
+									<label for="pay_cod">Thanh toán COD</label>
+									<input type="radio" id="pay_cod" value="pay_cod" name="payment_method">
+								</div>
 							</li>
 							<li>
-								<label for="pay_bank">Thanh toán chuyển khoản</label>
-								<input type="radio" id="pay_bank" value="pay_bank" name="payment_method">
+								<div class="w-100 p-1">
+									<label for="pay_bank">Thanh toán chuyển khoản</label>
+									<input type="radio" id="pay_bank" value="pay_bank" name="payment_method">
+								</div>
 							</li>
 							<li>
-								<label for="pay_app">Thanh toán qua ví điện tử</label>
-								<input type="radio" id="pay_app" value="pay_app" name="payment_method">
+
+								<div class="w-100 p-1">
+									<label for="pay_app">Thanh toán qua ví điện tử</label>
+									<input type="radio" id="pay_app" value="pay_app" name="payment_method">
+								</div>
+								<div class="px-5">
+									<label for="pay_app_momo" class="flex flex-flow-row">
+										<img src="../img/method/momo.png" height="40" width="40"/>
+										<p class="mr-1 ml-1" style="line-height: 40px">Ví MOMO</p>
+										<input type="radio" value="mono" name="pay_app" id="pay_app_momo">
+									</label>
+
+									<label for="pay_app_vnpay" class="flex flex-flow-row">
+										<img src="../img/method/vnpay.png" height="40" width="40"/>
+										<p class="mr-1 ml-1" style="line-height: 40px">Ví VNPAY</p>
+										<input type="radio" value="mono" name="pay_app" id="pay_app_vnpay">
+									</label>
+								</div>
 							</li>
+
 							<li>
-								<label for="pay_credits">Thanh toán qua thẻ tín dụng/ thẻ ghi nợ</label>
-								<input type="radio" id="pay_credits" value="pay_credits" name="payment_method">
+								<div class="w-100 p-1">
+									<label for="pay_credits">Thanh toán qua thẻ tín dụng/ thẻ ghi nợ</label>
+									<input type="radio" id="pay_credits" value="pay_credits" name="payment_method">
+								</div>
+								<div class="px-5">
+									<label for="pay_credits_master" class="flex flex-flow-row">
+										<img src="../img/method/mastercard.png" height="40" width="40"/>
+										<p class="mr-1 ml-1" style="line-height: 40px">Mastercard</p>
+										<input type="radio" value="mono" name="pay_app" id="pay_credits_master">
+									</label>
+
+									<label for="pay_credits_visa" class="flex flex-flow-row">
+										<img src="../img/method/visa.png" height="40" width="40"/>
+										<p class="mr-1 ml-1" style="line-height: 40px">Visa</p>
+										<input type="radio" value="mono" name="pay_app" id="pay_credits_visa">
+									</label>
+								</div>
 							</li>
+
 						</ul>
 					</div>
 				</div>
@@ -317,7 +354,7 @@
 							<a class="text-danger text-decoration-underline" style="line-height: 50px" href="cart.html">Quay lại giỏ hàng</a>
 						</div>
 						<div>
-							<button class="btn btn-danger btn-radius shadow">Đặt hàng</button>
+							<button class="btn btn-danger btn-radius shadow" name="order">Đặt hàng</button>
 						</div>
 					</div>
 				</div>
@@ -355,5 +392,23 @@
 	</div>
 </div>
 </div>
+<div id="id01" class="modal">
+	<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+	<div class="modal-content">
+		<div class="modal-body text-center">
+			<img src="../img/icon/alert.png" height="50px" width="50px"/>
+			<p class="text-white text-weight-bold">Đặt hàng thành công</p>
+			<p class="text-white text-weight-bold">Mã đơn hàng của bạn là <b>#4563</b></p>
+		</div>
+	</div>
+</div>
+<script src="../js/custom.js"></script>
+<script>
+	var button_order = document.querySelector("button[name=order]");
+	console.log(button_order);
+	button_order.addEventListener("click", function() {
+		modal.style.display = 'block';
+	});
+</script>
 </body>
 </html>

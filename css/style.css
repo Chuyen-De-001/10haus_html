@@ -391,7 +391,6 @@ body {
     text-decoration: none;
     display: block;
     font-weight: normal;
-    border: solid 1px var(--red-color);
 }
 
 .dropdown-content a:not(:last-child) {
@@ -1385,6 +1384,7 @@ body {
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
+    width: max-content;
     display: none;
     position: absolute;
     right: 0px;
@@ -1401,7 +1401,7 @@ body {
     text-decoration: none;
     display: block;
     font-weight: normal;
-    border: solid 1px var(--red-color);
+    /* border: solid 1px var(--red-color); */
 }
 
 .dropdown-content a:not(:last-child) {
@@ -1819,13 +1819,14 @@ select {
 
 .method-payment ul li {
     width: 100%;
-    display: flex;
+    display: block;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px;
+    padding: 0px;
     margin: 5px 0px;
-    border: solid 2px black;
-    border-radius: 5px;
+    /* border: solid 2px black; */
+    /* border-radius: 5px; */
+    border: none;
 }
 
 .banner-sub-title p {
@@ -1989,7 +1990,7 @@ button.tablinks:first-child {
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
+    /* background-color: #fefefe; */
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
     width: 20%; /* Could be more or less, depending on screen size */
@@ -2028,4 +2029,35 @@ button.tablinks:first-child {
 .modal button {
     padding: 10px 50px;
     width: 50%;
+}
+
+.dropdown-content > ul > li {
+    border: solid 1px var(--red-color);
+    border-bottom: none;
+}
+
+.dropdown-content > ul > li:last-child {
+    border-bottom: solid 1px var(--red-color);
+}
+
+
+.method-payment ul li div.w-100.p-1 {
+    border: solid 2px black;
+    border-radius: 5px;
+}
+
+.method-payment ul li div.p-1 input {
+    float: right;
+}
+
+.method-payment ul li div.px-5 {
+    display: none;
+}
+
+.method-payment ul li:hover > div.px-5 {
+    display: block;
+}
+
+.modal p {
+    line-height: normal;
 }

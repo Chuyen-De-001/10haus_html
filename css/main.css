@@ -1,5 +1,4 @@
 
-
 .pull-right {
     float: right;
 }
@@ -37,7 +36,7 @@
     color: black;
 }
 
-.text-danger{
+.text-danger {
     color: #A51A1D;
 }
 
@@ -402,6 +401,10 @@
 
 .bg-danger {
     background: var(--red-color);
+}
+
+.bg-white {
+    background: white;
 }
 
 

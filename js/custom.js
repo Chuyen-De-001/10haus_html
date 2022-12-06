@@ -63,12 +63,15 @@ function showMoney(int) {
 }
 
 var modal      = document.querySelector('div.modal');
-var btn_cancel = modal.querySelector("button[name=btn-cancel]")
-btn_cancel.addEventListener("click", function() {
-	modal.style.display = 'none';
-})
+var btn_cancel = modal.querySelector("button[name=btn-cancel]");
+if(btn_cancel !== null) {
+	btn_cancel.addEventListener("click", function() {
+		modal.style.display = 'none';
+	})
+}
 window.onclick = function(event) {
 	if(event.target === modal) {
 		modal.style.display = "none";
+		console.log("111");
 	}
 }

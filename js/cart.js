@@ -4,14 +4,18 @@ function updateFieldTongTien() {
 }
 
 function deleteToCart(e) {
-	const btn_remove   = e.target;
-	const tr           = btn_remove.closest('tr');
-	const confirm_bool = confirm("Bạn muốn xoá sản phẩm ra khỏi giỏ hàng?");
-	if(confirm_bool === true) {
+	var modal           = document.querySelector("div.modal");
+	modal.style.display = 'block';
+	var btn_yes         = modal.querySelector('button[name=btn-yes]');
+	btn_yes.addEventListener('click', function() {
+		const btn_remove = e.target;
+		const tr         = btn_remove.closest('tr');
 		tr.remove();
-	}
-	updateCartIcon(-1);
-	updateFieldTongTien();
+		updateCartIcon(-1);
+		updateFieldTongTien();
+		modal.style.display = 'none';
+	})
+
 }
 
 function updateQuantity(int, event) {

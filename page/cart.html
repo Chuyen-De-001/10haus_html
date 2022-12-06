@@ -8,7 +8,6 @@
 	<link rel="stylesheet" href="../css/main.css">
 	<link rel="stylesheet" href="../css/responsive.css">
 	<title>10 Haus - Cart</title>
-	<script src="../js/custom.js"></script>
 
 </head>
 <body>
@@ -306,6 +305,20 @@
 		</div>
 	</div>
 </div>
+<div class="modal">
+	<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+	<div class="modal-content modal-confirm">
+		<div class="modal-body text-center">
+			<p class="text-danger text-weight-bold">Xóa sản phẩm</p>
+			<p class="text-danger">Bạn có muốn xóa sản phẩm khỏi giỏ hàng ?</p>
+			<div class="flex flex-flow-row justify-content-space-between">
+				<button class="btn btn-black btn-radius text-weight-bold text-uppercase" name="btn-cancel">Không</button>
+				<button class="btn btn-danger btn-radius text-weight-bold text-uppercase" name="btn-yes">Có</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="../js/custom.js"></script>
 <script src="../js/cart.js"></script>
 </body>
 </html>

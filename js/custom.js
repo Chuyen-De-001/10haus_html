@@ -61,3 +61,14 @@ function updateCartIcon(int) {
 function showMoney(int) {
 	return int.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 }
+
+var modal      = document.querySelector('div.modal');
+var btn_cancel = modal.querySelector("button[name=btn-cancel]")
+btn_cancel.addEventListener("click", function() {
+	modal.style.display = 'none';
+})
+window.onclick = function(event) {
+	if(event.target === modal) {
+		modal.style.display = "none";
+	}
+}

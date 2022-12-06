@@ -214,6 +214,10 @@
     background: #A51A1D;
 }
 
+.btn-black {
+    background: black;
+}
+
 .btn-radius {
     border-radius: 40px;
 }

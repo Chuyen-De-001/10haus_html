@@ -2050,14 +2050,23 @@ button.tablinks:first-child {
     float: right;
 }
 
-.method-payment ul li div.px-5 {
-    display: block;
+.method-payment ul li div.px-5, .method-payment ul li div.px-2.row {
+    display: none;
 }
 
 .method-payment ul li:hover > div.px-5 {
     display: block;
 }
 
+.method-payment ul li:hover > div.px-2 {
+    display: block;
+}
+
 .modal p {
     line-height: normal;
+}
+
+.method-payment ul li div.px-5 p {
+    line-height: 40px;
+    min-width: 150px;
 }

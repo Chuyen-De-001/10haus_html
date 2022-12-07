@@ -2051,7 +2051,7 @@ button.tablinks:first-child {
 }
 
 .method-payment ul li div.px-5 {
-    display: none;
+    display: block;
 }
 
 .method-payment ul li:hover > div.px-5 {

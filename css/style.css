@@ -549,7 +549,7 @@ span.psw {
 }
 
 .login-form {
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 p {
@@ -1560,7 +1560,7 @@ span.psw {
 }
 
 .login-form {
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 p {
@@ -2069,4 +2069,42 @@ button.tablinks:first-child {
 .method-payment ul li div.px-5 p {
     line-height: 40px;
     min-width: 150px;
+}
+
+ul.history-log li {
+    border: solid 1px black;
+    border-bottom: none;
+    border-top: none;
+}
+
+ul.history-log li:first-child {
+    border-top: solid 1px black;
+}
+
+ul.history-log li:last-child {
+    border-bottom: solid 1px black;
+}
+
+ul.history-log li p {
+}
+
+ul.history-log li p {
+    line-height: inherit;
+}
+
+ul.history-log li div {
+    padding: 10px;
+}
+
+
+.dashboard-menu.w-100 .actvie {
+    color: var(--red-color);
+    background: beige;
+}
+
+.d li.text-weight-bold.text-uppercase.active {
+}
+
+.dashboard-menu li.active a {
+    color: var(--red-color);
 }

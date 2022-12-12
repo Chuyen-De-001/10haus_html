@@ -2108,3 +2108,13 @@ ul.history-log li div {
 .dashboard-menu li.active a {
     color: var(--red-color);
 }
+
+
+.flex.flex-direction-column.vh-100 ul li.active {
+    color: var(--red-color);
+}
+
+
+.flex.flex-direction-column.flex-grow-1 table tr td {
+    padding: 20px;
+}

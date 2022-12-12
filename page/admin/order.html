@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="../../css/main.css">
   <link rel="stylesheet" href="../../css/responsive.css">
   <link rel="stylesheet" href="../../css/style.css">
+  <script src="../../js/custom.js"></script>
 </head>
 <body>
 <div class="container-flush">
@@ -18,7 +19,7 @@
         <div class="dashboard-menu w-100">
           <ul>
             <li class="text-weight-bold text-uppercase ">tổng quan</li>
-            <li class="text-weight-bold text-uppercase ">quản lý đơn hàng</li>
+            <li class="text-weight-bold text-uppercase active">quản lý đơn hàng</li>
             <li class="text-weight-bold text-uppercase ">quản lý sản phẩm</li>
             <li class="text-weight-bold text-uppercase ">quản lý danh mục</li>
             <li class="text-weight-bold text-uppercase ">quản lý khách hàng</li>
@@ -37,7 +38,6 @@
               <img src="../../img/icon/search.png" height="25" width="27"/>
             </span>
           </div>
-
         </div>
         <div class="col-6">
           <div class="flex-direction-column justify-content">
@@ -55,106 +55,382 @@
       </div>
       <div class="container-flush px-3">
         <div class="row">
-          <div class="col-9">
-            <h3 class="text-uppercase">Kết quả kinh doanh trong ngày</h3>
-            <div class="row mb-3">
-              <div class="col-4">
-                <div class="box-info-today bg-danger p-5 text-white">
-                  <p>Doanh thu</p>
-                  <h4>998.000 VNĐ</h4>
+          <div class="col-12">
+            <div class="flex flex-direction-column flex-grow-1">
+              <h2 class="text-uppercase mt-3">Đơn hàng</h2>
+              <div class="w-100">
+                <div class="tab">
+                  <button class="tablinks text-uppercase active" onclick="openTab(event, 'cho_xac_nhan')">Chờ xác nhận</button>
+                  <button class="tablinks text-uppercase" onclick="openTab(event, 'dang_giao_hang')">Đang giao hàng</button>
+                  <button class="tablinks text-uppercase" onclick="openTab(event, 'da_giao_hang')">Đã giao hàng</button>
+                  <button class="tablinks text-uppercase" onclick="openTab(event, 'tat_ca_don_hang')">Tất cả đơn hàng</button>
                 </div>
-              </div>
-              <div class="col-4">
-                <div class="box-info-today bg-danger p-5 text-white">
-                  <p>Đơn hàng</p>
-                  <h4>12</h4>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="box-info-today bg-danger p-5 text-white">
-                  <p>Khách hàng</p>
-                  <h4>12</h4>
-                </div>
-              </div>
-            </div>
+                <!-- Tab content -->
 
-            <h3 class="text-uppercase">Doanh thu bán hàng</h3>
-            <div class="row mb-3">
-              <div class="col-4">
-                <div class="box-info-today bg-danger p-5 text-white">
-                  <p>Trong ngày</p>
-                  <h4>998.000 VNĐ</h4>
+                <div id="cho_xac_nhan" class="tabcontent">
+                  <div class="mt-1">
+                    <table class="w-100">
+                      <thead>
+                      <tr>
+                        <th class="text-uppercase">Mã đơn hàng</th>
+                        <th class="text-uppercase">Ngày đặt</th>
+                        <th class="text-uppercase">khách hàng</th>
+                        <th class="text-uppercase">Địa chỉ giao hàng</th>
+                        <th class="text-uppercase">Thanh toán</th>
+                        <th class="text-uppercase">Tổng tiền</th>
+                        <th class="text-uppercase">Xác nhận</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td class="text-danger text-decoration-underline text-weight-bold">4148</td>
+                        <td>2/11/2022</td>
+                        <td>Hiếu Nguyễn</td>
+                        <td>109 Bùi Thị Xuân, Hai Bà Trưng, Hà Nội</td>
+                        <td>COD</td>
+                        <td>450.000 VNĐ</td>
+                        <td>Thanh toán
+                          khi nhận hàng
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-decoration-underline text-weight-bold">4147</td>
+                        <td>2/11/2022</td>
+                        <td>Khả Tú</td>
+                        <td>16 Nguyễn An Ninh, Tương Mai, Hoàng Mai, Hà Nội</td>
+                        <td>Thẻ</td>
+                        <td>650.000 VNĐ</td>
+                        <td>Thanh toán
+                          khi nhận hàng
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-decoration-underline text-weight-bold">4146</td>
+                        <td>2/11/2022</td>
+                        <td>Nguyễn Thị Quỳnh Phương</td>
+                        <td>T16 Thôn Lộc Ninh, Xã Lộc Ninh, TP. Đồng Hới, Quảng Bình</td>
+                        <td>Chuyển khoản</td>
+                        <td>1.490.000 VNĐ</td>
+                        <td>Thanh toán
+                          khi nhận hàng
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-decoration-underline text-weight-bold">4145</td>
+                        <td>1/11/2022</td>
+                        <td>Van Nguyen</td>
+                        <td>81 Minh Hoà, Hàm Minh, Hàm Thuận Nam, Bình Thuận</td>
+                        <td>Ví điện tử</td>
+                        <td>1.120.000 VNĐ</td>
+                        <td>Thanh toán
+                          khi nhận hàng
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-decoration-underline text-weight-bold">4144</td>
+                        <td>1/11/2022</td>
+                        <td>Khánh Vân</td>
+                        <td>84 Lê lợi, Sầm Sơn, Thanh Hóa</td>
+                        <td>COD</td>
+                        <td>850.000 VNĐ</td>
+                        <td>Thanh toán
+                          khi nhận hàng
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-decoration-underline text-weight-bold">4143</td>
+                        <td>1/11/2022</td>
+                        <td>Kiệt Cao</td>
+                        <td>170 Nguyễn Huệ, Thành phố Lào Cai, Lào Cai</td>
+                        <td>COD</td>
+                        <td>740.000 VNĐ</td>
+                        <td>Thanh toán
+                          khi nhận hàng
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-decoration-underline text-weight-bold">4142</td>
+                        <td>1/11/2022</td>
+                        <td>Khánh Hiền</td>
+                        <td>Xóm 6, Xã Diễn Hạnh, Huyện Diễn Châu, Nghệ An</td>
+                        <td>Chuyển khoản</td>
+                        <td>650.000 VNĐ</td>
+                        <td>Thanh toán
+                          khi nhận hàng
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-decoration-underline text-weight-bold">4141</td>
+                        <td>1/11/2022</td>
+                        <td>Do Minh Hieu</td>
+                        <td>81 Minh Hoà, Hàm Minh, Hàm Thuận Nam, Bình Thuận</td>
+                        <td>COD</td>
+                        <td>890.000 VNĐ</td>
+                        <td>Thanh toán
+                          khi nhận hàng
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-decoration-underline text-weight-bold">4140</td>
+                        <td>1/11/2022</td>
+                        <td>Nguyễn Đức Hải</td>
+                        <td>354, Trần Hưng Đạo, thị trấn Nam Sách , Nam Sách, Hải Dương</td>
+                        <td>COD</td>
+                        <td>1.220.000 VNĐ</td>
+                        <td>Thanh toán
+                          khi nhận hàng
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-decoration-underline text-weight-bold">4139</td>
+                        <td>1/11/2022</td>
+                        <td>Pham Phuong Anh</td>
+                        <td>Số 1 phố Bờ Sông, Lộc Bình, Lạng Sơn</td>
+                        <td>COD</td>
+                        <td>450.000 VNĐ</td>
+                        <td>Thanh toán
+                          khi nhận hàng
+                        </td>
+                      </tr>
+                      </tbody>
+                    </table>
+                    <div class="text-center mt-3">
+                      <div class="pagination">
+                        <a href="#">«</a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">»</a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="col-4">
-                <div class="box-info-today bg-danger p-5 text-white">
-                  <p>Trong tháng</p>
-                  <h4>998.000 VNĐ</h4>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="box-info-today bg-danger p-5 text-white">
-                  <p>Trong năm</p>
-                  <h4>998.000 VNĐ</h4>
-                </div>
-              </div>
-            </div>
 
-            <h3 class="text-uppercase">Phiên truy cập</h3>
-            <div class="row mb-3">
-              <div class="col-4">
-                <div class="box-info-today bg-danger p-5 text-white">
-                  <p>Trong ngày</p>
-                  <h4>123</h4>
+                <div id="dang_giao_hang" class="tabcontent" style="display: block">
+                  <div class="mt-1">
+                    <table class="w-100">
+                      <thead>
+                      <tr>
+                        <th class="text-uppercase">Mã đơn hàng</th>
+                        <th class="text-uppercase">Ngày đặt</th>
+                        <th class="text-uppercase">Địa chỉ giao hàng</th>
+                        <th class="text-uppercase">danh sách sản phẩm</th>
+                        <th class="text-uppercase">Tổng tiền</th>
+                        <th class="text-uppercase">thanh toán</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td class="text-danger text-decoration-underline text-weight-bold">4128</td>
+                        <td>30/10/2022</td>
+                        <td>Kiệt Cao</td>
+                        <td>109 Bùi Thị Xuân, Hai Bà Trưng, Hà Nội</td>
+                        <td>COD</td>
+                        <td>450.000 VNĐ</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-decoration-underline text-weight-bold">4127</td>
+                        <td>30/10/2022</td>
+                        <td>Do Minh Hieu</td>
+                        <td>16 Nguyễn An Ninh, Tương Mai, Hoàng Mai, Hà Nội</td>
+                        <td>Thẻ</td>
+                        <td>650.000 VNĐ</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-decoration-underline text-weight-bold">4126</td>
+                        <td>30/10/2022</td>
+                        <td>Khánh Hiền</td>
+                        <td>T16 Thôn Lộc Ninh, Xã Lộc Ninh, TP. Đồng Hới, Quảng Bình</td>
+                        <td>Chuyển khoản</td>
+                        <td>1.490.000 VNĐ</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-decoration-underline text-weight-bold">4125</td>
+                        <td>30/10/2022</td>
+                        <td>Nguyễn Đức Hải</td>
+                        <td>81 Minh Hoà, Hàm Minh, Hàm Thuận Nam, Bình Thuận</td>
+                        <td>Ví điện tử</td>
+                        <td>1.120.000 VNĐ</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-decoration-underline text-weight-bold">4124</td>
+                        <td>30/10/2022</td>
+                        <td>Pham Phuong Anh</td>
+                        <td>84 Lê lợi, Sầm Sơn, Thanh Hóa</td>
+                        <td>COD</td>
+                        <td>850.000 VNĐ</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-decoration-underline text-weight-bold">4123</td>
+                        <td>30/10/2022</td>
+                        <td>Hiếu Nguyễn</td>
+                        <td>170 Nguyễn Huệ, Thành phố Lào Cai, Lào Cai</td>
+                        <td>COD</td>
+                        <td>740.000 VNĐ</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-decoration-underline text-weight-bold">4122</td>
+                        <td>30/10/2022</td>
+                        <td>Khả Tú</td>
+                        <td>Xóm 6, Xã Diễn Hạnh, Huyện Diễn Châu, Nghệ An</td>
+                        <td>Chuyển khoản</td>
+                        <td>650.000 VNĐ</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-decoration-underline text-weight-bold">4121</td>
+                        <td>30/10/2022</td>
+                        <td>Nguyễn Thị Quỳnh Phương</td>
+                        <td>81 Minh Hoà, Hàm Minh, Hàm Thuận Nam, Bình Thuận</td>
+                        <td>COD</td>
+                        <td>890.000 VNĐ</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-decoration-underline text-weight-bold">4120</td>
+                        <td>30/10/2022</td>
+                        <td>Van Nguyen</td>
+                        <td>354, Trần Hưng Đạo, thị trấn Nam Sách , Nam Sách, Hải Dương</td>
+                        <td>COD</td>
+                        <td>1.220.000 VNĐ</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-decoration-underline text-weight-bold">4120</td>
+                        <td>30/10/2022</td>
+                        <td>Khánh Vân</td>
+                        <td>Số 1 phố Bờ Sông, Lộc Bình, Lạng Sơn</td>
+                        <td>COD</td>
+                        <td>450.000 VNĐ</td>
+                        <td></td>
+                      </tr>
+                      </tbody>
+                    </table>
+                    <div class="text-center mt-3">
+                      <div class="pagination">
+                        <a href="#">«</a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">»</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="da_giao_hang" class="tabcontent">
+                  <div class="mt-1">
+                    <table class="w-100">
+                      <thead>
+                      <tr>
+                        <th class="text-uppercase">Mã đơn hàng</th>
+                        <th class="text-uppercase">Ngày đặt</th>
+                        <th class="text-uppercase">Địa chỉ giao hàng</th>
+                        <th class="text-uppercase">danh sách sản phẩm</th>
+                        <th class="text-uppercase">Tổng tiền</th>
+                        <th class="text-uppercase">thanh toán</th>
+                        <th class="text-uppercase">đánh giá</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td class="text-danger text-decoration-underline text-weight-bold">4128</td>
+                        <td>30/10/2022</td>
+                        <td>Kiệt Cao</td>
+                        <td>109 Bùi Thị Xuân, Hai Bà Trưng, Hà Nội</td>
+                        <td>COD</td>
+                        <td>450.000 VNĐ</td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-decoration-underline text-weight-bold">4127</td>
+                        <td>30/10/2022</td>
+                        <td>Do Minh Hieu</td>
+                        <td>16 Nguyễn An Ninh, Tương Mai, Hoàng Mai, Hà Nội</td>
+                        <td>Thẻ</td>
+                        <td>1.250.000 VNĐ</td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-decoration-underline text-weight-bold">4126</td>
+                        <td>30/10/2022</td>
+                        <td>Khánh Hiền</td>
+                        <td>T16 Thôn Lộc Ninh, Xã Lộc Ninh, TP. Đồng Hới, Quảng Bình</td>
+                        <td>Chuyển khoản</td>
+                        <td>900.000 VNĐ</td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-decoration-underline text-weight-bold">4125</td>
+                        <td>30/10/2022</td>
+                        <td>Nguyễn Đức Hải</td>
+                        <td>81 Minh Hoà, Hàm Minh, Hàm Thuận Nam, Bình Thuận</td>
+                        <td>Ví điện tử</td>
+                        <td>720.000 VNĐ</td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-decoration-underline text-weight-bold">4124</td>
+                        <td>30/10/2022</td>
+                        <td>Pham Phuong Anh</td>
+                        <td>84 Lê lợi, Sầm Sơn, Thanh Hóa</td>
+                        <td>COD</td>
+                        <td>450.000 VNĐ</td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-decoration-underline text-weight-bold">4123</td>
+                        <td>30/10/2022</td>
+                        <td>Hiếu Nguyễn</td>
+                        <td>170 Nguyễn Huệ, Thành phố Lào Cai, Lào Cai</td>
+                        <td>COD</td>
+                        <td>680.000 VNĐ</td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-decoration-underline text-weight-bold">4122</td>
+                        <td>30/10/2022</td>
+                        <td>Khả Tú</td>
+                        <td>Xóm 6, Xã Diễn Hạnh, Huyện Diễn Châu, Nghệ An</td>
+                        <td>Chuyển khoản</td>
+                        <td>450.000 VNĐ</td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-decoration-underline text-weight-bold">4121</td>
+                        <td>30/10/2022</td>
+                        <td>Nguyễn Thị Quỳnh Phương</td>
+                        <td>81 Minh Hoà, Hàm Minh, Hàm Thuận Nam, Bình Thuận</td>
+                        <td>COD</td>
+                        <td>450.000 VNĐ</td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-decoration-underline text-weight-bold">4120</td>
+                        <td>30/10/2022</td>
+                        <td>Van Nguyen</td>
+                        <td>354, Trần Hưng Đạo, thị trấn Nam Sách , Nam Sách, Hải Dương</td>
+                        <td>COD</td>
+                        <td>450.000 VNĐ</td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-decoration-underline text-weight-bold">4119</td>
+                        <td>30/10/2022</td>
+                        <td>Khánh Vân</td>
+                        <td>Số 1 phố Bờ Sông, Lộc Bình, Lạng Sơn</td>
+                        <td>COD</td>
+                        <td>450.000 VNĐ</td>
+                      </tr>
+                      </tbody>
+                    </table>
+                    <div class="text-center mt-3">
+                      <div class="pagination">
+                        <a href="#">«</a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">»</a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="col-4">
-                <div class="box-info-today bg-danger p-5 text-white">
-                  <p>Trong tháng</p>
-                  <h4>4590</h4>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="box-info-today bg-danger p-5 text-white">
-                  <p>Trong năm</p>
-                  <h4>44892</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-3">
-            <h3 class="text-truncate text-center text-weight-bold text-uppercase mb-1">Nhập ký hoạt động</h3>
-            <ul class="history-log">
-              <li>
-                <div>
-                  <p>Có đơn hàng mới <b>#4563</b></p>
-                  <p>1/11/2022 10:30</p>
-                </div>
-                <hr>
-              </li>
-              <li>
-                <div>
-                  <p>Có đơn hàng mới <b>#4563</b></p>
-                  <p>1/11/2022 10:30</p>
-                </div>
-                <hr>
-              </li>
-              <li>
-                <div>
-                  <p>Có đơn hàng mới <b>#4563</b></p>
-                  <p>1/11/2022 10:30</p>
-                </div>
-                <hr>
-              </li>
-              <li>
-                <div>
-                  <p>Có đơn hàng mới <b>#4563</b></p>
-                  <p>1/11/2022 10:30</p>
-                </div>
-              </li>
-            </ul>
-            <div class="text-center">
-              <button class="btn btn-danger btn-radius">Xem thêm</button>
             </div>
           </div>
         </div>
@@ -162,5 +438,8 @@
     </div>
   </div>
 </div>
+<script>
+  openTab(event, 'cho_xac_nhan');
+</script>
 </body>
 </html>

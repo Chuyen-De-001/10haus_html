@@ -2118,3 +2118,21 @@ ul.history-log li div {
 .flex.flex-direction-column.flex-grow-1 table tr td {
     padding: 20px;
 }
+
+.tab-confirm {
+    padding: 10px 20px;
+    background: var(--red-color);
+    color: white;
+    border-radius: 50px;
+    font-weight: bold;
+    position: relative;
+    cursor: context-menu;
+}
+
+.tab-confirm svg {
+    right: 12px;
+    top: -6px;
+    position: absolute;
+    width: 15px;
+    fill: white;
+}

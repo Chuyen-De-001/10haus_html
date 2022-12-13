@@ -2136,3 +2136,8 @@ ul.history-log li div {
     width: 15px;
     fill: white;
 }
+
+
+.tab-confirm svg.times {
+    top: 7px;
+}

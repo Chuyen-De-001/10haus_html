@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<?xml version="1.0" encoding="iso-8859-1"?>
+	<meta charset="UTF-8">
+	<title>10Haus - Admin - Product</title>
+	`
+	<link rel="stylesheet" href="../../css/main.css">
+	<link rel="stylesheet" href="../../css/responsive.css">
+	<link rel="stylesheet" href="../../css/style.css">
+	<script src="../../js/custom.js"></script>
+</head>
+<body>
+<div class="container-flush">
+	<div class="row">
+		<div class="col-2 p-0">
+			<div class="flex flex-direction-column vh-100">
+				<div class="bg-danger p-5">
+					<img src="../../img/logo/Logo 2.png" class="w-100"/>
+				</div>
+				<div class="dashboard-menu w-100">
+					<ul>
+						<li class="text-weight-bold text-uppercase ">tổng quan</li>
+						<li class="text-weight-bold text-uppercase ">quản lý đơn hàng</li>
+						<li class="text-weight-bold text-uppercase ">quản lý sản phẩm</li>
+						<li class="text-weight-bold text-uppercase active">quản lý danh mục</li>
+						<li class="text-weight-bold text-uppercase ">quản lý khách hàng</li>
+						<li class="text-weight-bold text-uppercase ">quản lý đánh giá</li>
+					</ul>
+				</div>
+				<div class="flex flex-grow-1 bg-danger"></div>
+			</div>
+		</div>
+		<div class="col-10 p-0">
+			<div class="row shadow px-3">
+				<div class="col-6">
+					<div class="form-group">
+						<input type="text" name="" placeholder="Nhập từ khóa tìm kiếm"/>
+						<span class="form-group-icon">
+              <img src="../../img/icon/search.png" height="25" width="27"/>
+            </span>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="flex-direction-column justify-content">
+						<div class="flex flex-flow-row-reverse">
+							<div class="flex flex-direction-column justify-content">
+								<div>
+									<span><img src="../../img/icon/bell.png" height="20" width="20"/></span>
+									<span><img src="../../img/icon/list.png" height="20" width="20"/></span>
+								</div>
+							</div>
+							<span style="line-height: 50px" class="mr-1">Xin chàn, <b>Minh</b></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-flush px-3">
+				<div class="row">
+					<div class="col-12">
+						<div class="flex flex-direction-column flex-grow-1">
+							<h2 class="text-uppercase mt-3 flex flex-flow-row justify-content-space-between">
+								<p>danh mục</p>
+							</h2>
+							<div class="w-100">
+								<div class="tab">
+									<button class="tablinks text-uppercase active" onclick="openTab(event, 'danh_muc_chinh')">Danh mục chính</button>
+									<button class="tablinks text-uppercase" onclick="openTab(event, 'danh_muc_phu')">Danh mục phụ</button>
+								</div>
+								<!-- Tab content -->
+								<div id="danh_muc_chinh" class="tabcontent" style="display: block">
+									<div class="mt-1">
+										<table class="w-100">
+											<thead>
+											<tr>
+												<th class="text-uppercase">Tên danh mục chính</th>
+												<th class="text-uppercase">Tuỳ chỉnh</th>
+											</tr>
+											</thead>
+											<tbody>
+											<tr>
+												<td class="text-weight-bold text-uppercase">Trang chủ</td>
+												<td>
+													<a href="#" class="text-danger text-decoration-underline text-uppercase text-weight-bold"> Sửa</a> |
+													<a href="#" class="text-danger text-decoration-underline text-uppercase text-weight-bold"> Xoá</a>
+												</td>
+											</tr>
+											<tr>
+												<td class="text-weight-bold text-uppercase">giới thiệu</td>
+												<td>
+													<a href="#" class="text-danger text-decoration-underline text-uppercase text-weight-bold"> Sửa</a> |
+													<a href="#" class="text-danger text-decoration-underline text-uppercase text-weight-bold"> Xoá</a>
+												</td>
+											</tr>
+											<tr>
+												<td class="text-weight-bold text-uppercase">sản phẩm</td>
+												<td>
+													<a href="#" class="text-danger text-decoration-underline text-uppercase text-weight-bold"> Sửa</a> |
+													<a href="#" class="text-danger text-decoration-underline text-uppercase text-weight-bold"> Xoá</a>
+												</td>
+											</tr>
+											<tr>
+												<td class="text-weight-bold text-uppercase">liên hệ</td>
+												<td>
+													<a href="#" class="text-danger text-decoration-underline text-uppercase text-weight-bold"> Sửa</a> |
+													<a href="#" class="text-danger text-decoration-underline text-uppercase text-weight-bold"> Xoá</a>
+												</td>
+											</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div id="danh_muc_phu" class="tabcontent">
+									<div class="mt-1">
+										<table class="w-100">
+											<thead>
+											<tr>
+												<th class="text-uppercase">Tên danh mục</th>
+												<th class="text-uppercase">thuộc danh mục chính</th>
+												<th class="text-uppercase">tuỳ chỉnh</th>
+											</tr>
+											</thead>
+											<tbody>
+											<tr>
+												<td class="text-uppercase text-weight-bold">Tất cả sản phẩm</td>
+												<td class="text-uppercase text-weight-bold">
+													Sản phẩm
+												</td>
+												<td>
+													<a href="#" class="text-danger text-decoration-underline text-uppercase text-weight-bold"> Sửa</a> |
+													<a href="#" class="text-danger text-decoration-underline text-uppercase text-weight-bold"> Xoá</a>
+												</td>
+											</tr>
+											<tr>
+												<td class="text-uppercase text-weight-bold">sản phẩm bán chạy</td>
+												<td class="text-uppercase text-weight-bold">
+													Sản phẩm
+												</td>
+												<td>
+													<a href="#" class="text-danger text-decoration-underline text-uppercase text-weight-bold"> Sửa</a> |
+													<a href="#" class="text-danger text-decoration-underline text-uppercase text-weight-bold"> Xoá</a>
+												</td>
+											</tr>
+											<tr>
+												<td class="text-uppercase text-weight-bold">sản phẩm giảm giá</td>
+												<td class="text-uppercase text-weight-bold">
+													Sản phẩm
+												</td>
+												<td>
+													<a href="#" class="text-danger text-decoration-underline text-uppercase text-weight-bold"> Sửa</a> |
+													<a href="#" class="text-danger text-decoration-underline text-uppercase text-weight-bold"> Xoá</a>
+												</td>
+											</tr>
+											<tr>
+												<td class="text-uppercase text-weight-bold">sản phẩm mới</td>
+												<td class="text-uppercase text-weight-bold">
+													Sản phẩm
+												</td>
+												<td>
+													<a href="#" class="text-danger text-decoration-underline text-uppercase text-weight-bold"> Sửa</a> |
+													<a href="#" class="text-danger text-decoration-underline text-uppercase text-weight-bold"> Xoá</a>
+												</td>
+											</tr>
+											<tr>
+												<td class="text-uppercase text-weight-bold">Áo</td>
+												<td class="text-uppercase text-weight-bold">
+													Tất cả sản phẩm
+												</td>
+												<td>
+													<a href="#" class="text-danger text-decoration-underline text-uppercase text-weight-bold"> Sửa</a> |
+													<a href="#" class="text-danger text-decoration-underline text-uppercase text-weight-bold"> Xoá</a>
+												</td>
+											</tr>
+											<tr>
+												<td class="text-uppercase text-weight-bold">Quần</td>
+												<td class="text-uppercase text-weight-bold">
+													Tất cả sản phẩm
+												</td>
+												<td>
+													<a href="#" class="text-danger text-decoration-underline text-uppercase text-weight-bold"> Sửa</a> |
+													<a href="#" class="text-danger text-decoration-underline text-uppercase text-weight-bold"> Xoá</a>
+												</td>
+											</tr>
+											<tr>
+												<td class="text-uppercase text-weight-bold">Váy</td>
+												<td class="text-uppercase text-weight-bold">
+													Tất cả sản phẩm
+												</td>
+												<td>
+													<a href="#" class="text-danger text-decoration-underline text-uppercase text-weight-bold"> Sửa</a> |
+													<a href="#" class="text-danger text-decoration-underline text-uppercase text-weight-bold"> Xoá</a>
+												</td>
+											</tr>
+											<tr>
+												<td class="text-uppercase text-weight-bold">Giày dép</td>
+												<td class="text-uppercase text-weight-bold">
+													Tất cả sản phẩm
+												</td>
+												<td>
+													<a href="#" class="text-danger text-decoration-underline text-uppercase text-weight-bold"> Sửa</a> |
+													<a href="#" class="text-danger text-decoration-underline text-uppercase text-weight-bold"> Xoá</a>
+												</td>
+											</tr>
+											<tr>
+												<td class="text-uppercase text-weight-bold">Phụ kiện</td>
+												<td class="text-uppercase text-weight-bold">
+													Tất cả sản phẩm
+												</td>
+												<td>
+													<a href="#" class="text-danger text-decoration-underline text-uppercase text-weight-bold"> Sửa</a> |
+													<a href="#" class="text-danger text-decoration-underline text-uppercase text-weight-bold"> Xoá</a>
+												</td>
+											</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

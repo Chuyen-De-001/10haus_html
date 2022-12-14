@@ -20,12 +20,24 @@
         </div>
         <div class="dashboard-menu w-100">
           <ul>
-            <li class="text-weight-bold text-uppercase ">tổng quan</li>
-            <li class="text-weight-bold text-uppercase active">quản lý đơn hàng</li>
-            <li class="text-weight-bold text-uppercase ">quản lý sản phẩm</li>
-            <li class="text-weight-bold text-uppercase ">quản lý danh mục</li>
-            <li class="text-weight-bold text-uppercase ">quản lý khách hàng</li>
-            <li class="text-weight-bold text-uppercase ">quản lý đánh giá</li>
+            <li class="">
+              <a href="dashbroad.html" class="text-weight-bold text-uppercase text-decoration-none text-black">tổng quan</a>
+            </li>
+            <li class="text-weight-bold text-uppercase active">
+              <a href="order.html" class="text-weight-bold text-uppercase text-decoration-none text-black">quản lý đơn hàng</a>
+            </li>
+            <li class="text-weight-bold text-uppercase ">
+              <a href="product.html" class="text-weight-bold text-uppercase text-decoration-none text-black">quản lý sản phẩm</a>
+            </li>
+            <li class="text-weight-bold text-uppercase ">
+              <a href="categories.html" class="text-weight-bold text-uppercase text-decoration-none text-black">quản lý danh mục</a>
+            </li>
+            <li class="text-weight-bold text-uppercase ">
+              <a href="customs.html" class="text-weight-bold text-uppercase text-decoration-none text-black">quản lý khách hàng</a>
+            </li>
+            <li class="text-weight-bold text-uppercase ">
+              <a href="comments.html" class="text-weight-bold text-uppercase text-decoration-none text-black">quản lý đánh giá</a>
+            </li>
           </ul>
         </div>
         <div class="flex flex-grow-1 bg-danger"></div>
@@ -65,14 +77,14 @@
               </h2>
               <div class="w-100">
                 <div class="tab">
-                  <button class="tablinks text-uppercase active" onclick="openTab(event, 'cho_xac_nhan')">Chờ xác nhận</button>
+                  <button class="tablinks text-uppercase active" onclick="openTab(event, 'cho_xac_nhan_order')">Chờ xác nhận</button>
                   <button class="tablinks text-uppercase" onclick="openTab(event, 'dang_giao_hang')">Đang giao hàng</button>
                   <button class="tablinks text-uppercase" onclick="openTab(event, 'da_giao_hang')">Đã giao hàng</button>
                   <button class="tablinks text-uppercase" onclick="openTab(event, 'tat_ca_don_hang')">Tất cả đơn hàng</button>
                 </div>
                 <!-- Tab content -->
 
-                <div id="cho_xac_nhan" class="tabcontent" style="display: block">
+                <div id="cho_xac_nhan_order" class="tabcontent" style="display: block">
                   <div class="mt-1">
                     <table class="w-100">
                       <thead>

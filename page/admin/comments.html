@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <?xml version="1.0" encoding="iso-8859-1"?>
+  <meta charset="UTF-8">
+  <title>10Haus - Admin - Product</title>
+  `
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/responsive.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <script src="../../js/custom.js"></script>
+</head>
+<body>
+<div class="container-flush">
+  <div class="row">
+    <div class="col-2 p-0">
+      <div class="flex flex-direction-column vh-100">
+        <div class="bg-danger p-5">
+          <img src="../../img/logo/Logo 2.png" class="w-100"/>
+        </div>
+        <div class="dashboard-menu w-100">
+          <ul>
+            <li class="">
+              <a href="dashbroad.html" class="text-weight-bold text-uppercase text-decoration-none text-black">tổng quan</a>
+            </li>
+            <li class="text-weight-bold text-uppercase ">
+              <a href="order.html" class="text-weight-bold text-uppercase text-decoration-none text-black">quản lý đơn hàng</a>
+            </li>
+            <li class="text-weight-bold text-uppercase ">
+              <a href="product.html" class="text-weight-bold text-uppercase text-decoration-none text-black">quản lý sản phẩm</a>
+            </li>
+            <li class="text-weight-bold text-uppercase ">
+              <a href="categories.html" class="text-weight-bold text-uppercase text-decoration-none text-black">quản lý danh mục</a>
+            </li>
+            <li class="text-weight-bold text-uppercase ">
+              <a href="customs.html" class="text-weight-bold text-uppercase text-decoration-none text-black">quản lý khách hàng</a>
+            </li>
+            <li class="text-weight-bold text-uppercase active">
+              <a href="comments.html" class="text-weight-bold text-uppercase text-decoration-none text-black">quản lý đánh giá</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex flex-grow-1 bg-danger"></div>
+      </div>
+    </div>
+    <div class="col-10 p-0">
+      <div class="row shadow px-3">
+        <div class="col-6">
+          <div class="form-group">
+            <input type="text" name="" placeholder="Nhập từ khóa tìm kiếm"/>
+            <span class="form-group-icon">
+              <img src="../../img/icon/search.png" height="25" width="27"/>
+            </span>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="flex-direction-column justify-content">
+            <div class="flex flex-flow-row-reverse">
+              <div class="flex flex-direction-column justify-content">
+                <div>
+                  <span><img src="../../img/icon/bell.png" height="20" width="20"/></span>
+                  <span><img src="../../img/icon/list.png" height="20" width="20"/></span>
+                </div>
+              </div>
+              <span style="line-height: 50px" class="mr-1">Xin chàn, <b>Minh</b></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-flush px-3">
+        <div class="row">
+          <div class="col-12">
+            <div class="flex flex-direction-column flex-grow-1">
+              <h2 class="text-uppercase mt-3 flex flex-flow-row justify-content-space-between">
+                <p>đánh giá</p>
+              </h2>
+              <div class="w-100">
+                <div class="tab">
+                  <button class="tablinks text-uppercase active" onclick="openTab(event, 'cho_xac_nhan')">chờ xác nhận</button>
+                  <button class="tablinks text-uppercase" onclick="openTab(event, 'da_xac_nhan')">đã xác nhận</button>
+                </div>
+                <!-- Tab content -->
+                <div id="cho_xac_nhan" class="tabcontent page-customs" style="display: block">
+                  <div class="mt-1">
+                    <table class="w-100">
+                      <thead>
+                      <tr>
+                        <th class="text-uppercase">Mã đánh giá</th>
+                        <th class="text-uppercase">Mã khách hàng</th>
+                        <th class="text-uppercase">Mã sản phẩm</th>
+                        <th class="text-uppercase">Số sao đánh giá</th>
+                        <th class="text-uppercase">Nội dung đánh giá</th>
+                        <th class="text-uppercase">xác nhận</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">DG345</td>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">
+                          KH3445
+                        </td>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">T123</td>
+                        <td>
+                          <div class="rate-start">
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon">★</span>
+                          </div>
+                        </td>
+                        <td>Thấy nhiều bạn mua nên mua thử coi sao mà đẹp [...]</td>
+                        <td>
+                          <a class="tab-confirm">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50px" height="50px">
+                              <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/>
+                            </svg>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">DG344</td>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">
+                          KH1235
+                        </td>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">T073</td>
+                        <td>
+                          <div class="rate-start">
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                          </div>
+                        </td>
+                        <td>Nhận áo sau 2 ngày đặt. Chất liệu dày dặn không bị [...]</td>
+                        <td>
+                          <a class="tab-confirm">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50px" height="50px">
+                              <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/>
+                            </svg>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">DG343</td>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">
+                          KH2343
+                        </td>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">T183</td>
+                        <td>
+                          <div class="rate-start">
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon">★</span>
+                          </div>
+                        </td>
+                        <td>Sản phẩm tốt hơn mong đợi. Áo không qua dày. Giá [...]</td>
+                        <td>
+                          <a class="tab-confirm">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50px" height="50px">
+                              <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/>
+                            </svg>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">DG342</td>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">
+                          KH3222
+                        </td>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">T111</td>
+                        <td>
+                          <div class="rate-start">
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon">★</span>
+                          </div>
+                        </td>
+                        <td>Tốt. Sản phẩm đẹp không lỗi lầm gì. Hình in sắc nét [...]</td>
+                        <td>
+                          <a class="tab-confirm">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50px" height="50px">
+                              <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/>
+                            </svg>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">DG341</td>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">
+                          KH1123
+                        </td>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">T064</td>
+                        <td>
+                          <div class="rate-start">
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                          </div>
+                        </td>
+                        <td>10 điểm nha. Áo siêu đẹp. Mua theo size shop tư [...]</td>
+                        <td>
+                          <a class="tab-confirm">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50px" height="50px">
+                              <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/>
+                            </svg>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">DG339</td>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">
+                          KH1233
+                        </td>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">T123</td>
+                        <td>
+                          <div class="rate-start">
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon ">★</span>
+                          </div>
+                        </td>
+                        <td>Ổn nha. Có điều phần cổ áo hơi bo nên lúc mặc vào [...]</td>
+                        <td>
+                          <a class="tab-confirm">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50px" height="50px">
+                              <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/>
+                            </svg>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">DG338</td>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">
+                          KH1211
+                        </td>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">T043</td>
+                        <td>
+                          <div class="rate-start">
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon ">★</span>
+                            <span class="star-icon ">★</span>
+                          </div>
+                        </td>
+                        <td>Cho shop 5 sao nha. Không biết nói gì :))</td>
+                        <td>
+                          <a class="tab-confirm">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50px" height="50px">
+                              <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/>
+                            </svg>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">DG337</td>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">
+                          KH0579
+                        </td>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">T003</td>
+                        <td>
+                          <div class="rate-start">
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                          </div>
+                        </td>
+                        <td>Chất áo này lần đầu tiên mình có. Cảm giác mặc lên [...]</td>
+                        <td>
+                          <a class="tab-confirm">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50px" height="50px">
+                              <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/>
+                            </svg>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">DG336</td>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">
+                          KH1124
+                        </td>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">T083</td>
+                        <td>
+                          <div class="rate-start">
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                          </div>
+                        </td>
+                        <td>Tuyệt vời</td>
+                        <td>
+                          <a class="tab-confirm">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50px" height="50px">
+                              <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/>
+                            </svg>
+                          </a>
+                        </td>
+                      </tr>
+                      </tbody>
+                    </table>
+                    <div class="text-center mt-3">
+                      <div class="pagination">
+                        <a href="#">«</a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">»</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="da_xac_nhan" class="tabcontent page-customs">
+                  <div class="mt-1">
+                    <table class="w-100">
+                      <thead>
+                      <tr>
+                        <th class="text-uppercase">Mã đánh giá</th>
+                        <th class="text-uppercase">Mã khách hàng</th>
+                        <th class="text-uppercase">Mã sản phẩm</th>
+                        <th class="text-uppercase">Số sao đánh giá</th>
+                        <th class="text-uppercase">Nội dung đánh giá</th>
+                        <th class="text-uppercase">xác nhận</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">DG345</td>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">
+                          KH3445
+                        </td>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">T123</td>
+                        <td>
+                          <div class="rate-start">
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon">★</span>
+                          </div>
+                        </td>
+                        <td>Thấy nhiều bạn mua nên mua thử coi sao mà đẹp [...]</td>
+                        <td>
+                          <a class="tab-confirm">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50px" height="50px">
+                              <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/>
+                            </svg>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">DG344</td>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">
+                          KH1235
+                        </td>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">T073</td>
+                        <td>
+                          <div class="rate-start">
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                          </div>
+                        </td>
+                        <td>Nhận áo sau 2 ngày đặt. Chất liệu dày dặn không bị [...]</td>
+                        <td>
+                          <a class="tab-confirm">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="times" viewBox="0 0 352 512">
+                              <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"/>
+                            </svg>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">DG343</td>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">
+                          KH2343
+                        </td>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">T183</td>
+                        <td>
+                          <div class="rate-start">
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon">★</span>
+                          </div>
+                        </td>
+                        <td>Sản phẩm tốt hơn mong đợi. Áo không qua dày. Giá [...]</td>
+                        <td>
+                          <a class="tab-confirm">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="times" viewBox="0 0 352 512">
+                              <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"/>
+                            </svg>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">DG342</td>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">
+                          KH3222
+                        </td>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">T111</td>
+                        <td>
+                          <div class="rate-start">
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon">★</span>
+                          </div>
+                        </td>
+                        <td>Tốt. Sản phẩm đẹp không lỗi lầm gì. Hình in sắc nét [...]</td>
+                        <td>
+                          <a class="tab-confirm">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="times" viewBox="0 0 352 512">
+                              <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"/>
+                            </svg>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">DG341</td>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">
+                          KH1123
+                        </td>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">T064</td>
+                        <td>
+                          <div class="rate-start">
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                          </div>
+                        </td>
+                        <td>10 điểm nha. Áo siêu đẹp. Mua theo size shop tư [...]</td>
+                        <td>
+                          <a class="tab-confirm">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="times" viewBox="0 0 352 512">
+                              <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"/>
+                            </svg>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">DG339</td>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">
+                          KH1233
+                        </td>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">T123</td>
+                        <td>
+                          <div class="rate-start">
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon ">★</span>
+                          </div>
+                        </td>
+                        <td>Ổn nha. Có điều phần cổ áo hơi bo nên lúc mặc vào [...]</td>
+                        <td>
+                          <a class="tab-confirm">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="times" viewBox="0 0 352 512">
+                              <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"/>
+                            </svg>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">DG338</td>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">
+                          KH1211
+                        </td>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">T043</td>
+                        <td>
+                          <div class="rate-start">
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon ">★</span>
+                            <span class="star-icon ">★</span>
+                          </div>
+                        </td>
+                        <td>Cho shop 5 sao nha. Không biết nói gì :))</td>
+                        <td>
+                          <a class="tab-confirm">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="times" viewBox="0 0 352 512">
+                              <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"/>
+                            </svg>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">DG337</td>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">
+                          KH0579
+                        </td>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">T003</td>
+                        <td>
+                          <div class="rate-start">
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                          </div>
+                        </td>
+                        <td>Chất áo này lần đầu tiên mình có. Cảm giác mặc lên [...]</td>
+                        <td>
+                          <a class="tab-confirm">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="times" viewBox="0 0 352 512">
+                              <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"/>
+                            </svg>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">DG336</td>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">
+                          KH1124
+                        </td>
+                        <td class="text-danger text-uppercase text-decoration-underline text-weight-bold">T083</td>
+                        <td>
+                          <div class="rate-start">
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                            <span class="star-icon filled">★</span>
+                          </div>
+                        </td>
+                        <td>Tuyệt vời</td>
+                        <td>
+                          <a class="tab-confirm">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="times" viewBox="0 0 352 512">
+                              <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"/>
+                            </svg>
+                          </a>
+                        </td>
+                      </tr>
+                      </tbody>
+                    </table>
+                    <div class="text-center mt-3">
+                      <div class="pagination">
+                        <a href="#">«</a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">»</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

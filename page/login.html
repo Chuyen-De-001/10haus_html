@@ -72,7 +72,6 @@
 						</a>
 					</li>
 				</ul>
-
 			</nav>
 		</div>
 		<div class="row mb-2">
@@ -151,14 +150,11 @@
 		username: 'huy_nguyen',
 		password: '12345678',
 	};
-
 	function login() {
 		console.log(user);
 		var username      = document.querySelector('input[name=uname]');
 		var password      = document.querySelector('input[name=psw]');
 		var error_message = document.querySelector('p[name=error-message]');
-		console.log(username.value);
-		console.log(password.value);
 		if(username.value !== user.username || password.value !== user.password) {
 			error_message.innerHTML = "Sai mật khẩu hoặc tài khoản";
 			username.classList.add("has-error");

@@ -2165,9 +2165,10 @@ div#tat_ca_san_pham table td:nth-child(3) {
     padding-left: 15px;
 }
 
-div#cho_xac_nhan_order table td:nth-child(4),div#cho_xac_nhan_order table td:nth-child(3) {
+div#cho_xac_nhan_order table td:nth-child(4), div#cho_xac_nhan_order table td:nth-child(3), div#cho_xac_nhan table td:nth-child(5) {
     text-align: left;
 }
+
 
 
 

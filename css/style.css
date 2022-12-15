@@ -2152,4 +2152,22 @@ div#cho_xac_nhan table td, div#da_xac_nhan table td {
     padding: 8px;
 }
 
+div#cho_xac_nhan table td:nth-child(4), div#da_xac_nhan table td:nth-child(4) {
+    text-align: left !important;
+}
+
+div.page-custom table td:nth-child(2), div.page-custom table td:nth-child(3) {
+    text-align: left;
+}
+
+div#tat_ca_san_pham table td:nth-child(3) {
+    text-align: left;
+    padding-left: 15px;
+}
+
+div#cho_xac_nhan_order table td:nth-child(4),div#cho_xac_nhan_order table td:nth-child(3) {
+    text-align: left;
+}
+
+
 

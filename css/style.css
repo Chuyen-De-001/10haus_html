@@ -2169,6 +2169,6 @@ div#cho_xac_nhan_order table td:nth-child(4), div#cho_xac_nhan_order table td:nt
     text-align: left;
 }
 
-
-
-
+.modal-content.modal-confirm.bg-white .flex.flex-flow-row.justify-content-space-between button{
+    padding:10px 20px
+}
